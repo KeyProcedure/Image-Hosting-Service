@@ -8,20 +8,18 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Student Information
 
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+|               | Information      |
+|:-------------:|:----------------:|
+| Student Name  | Zuby Afzal       |
+| Student ID    | 922422043        |
+| Student Email | zubytm@gmail.com |
 
 
 
 # Build/Run Instructions
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. NA
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. Open files in a browser
