@@ -1,8 +1,39 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gainsboro;
+}
+
+.container {
+  display: flex;
 }
 
 a {
-  color: #00B7FF;
+  flex: 1;
+  font-size: 16px;
+  font-family: "Arial Black", serif;
+  color: dodgerblue;
+  line-height: 2;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background: lightsalmon;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  outline: black groove 3px;
+}
+
+footer {
+  font-style: oblique;
+  position: fixed;
+  bottom: 0;
+}
+
+p {
+  font-size: 18px;
 }

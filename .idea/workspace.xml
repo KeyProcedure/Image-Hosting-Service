@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="updated unversioned files" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="updated unversioned files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/postimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/postimage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/viewpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/viewpost.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
