@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  background: lavenderblush;
+  background: #b2c0ff;
 }
 
 h1 {
@@ -39,6 +39,8 @@ h3 {
 
 p {
   font-size: 18px;
+  text-align: center;
+
 }
 
 label {
@@ -61,7 +63,14 @@ input:focus {
 
 input[type=submit] {
   text-align: center;
+  margin-top: 15px;
   background-color: white;
+  transition:0.5s;
+}
+
+input[type=submit]:hover {
+  transition: .01s;
+  background-color: #c7d9ff;
 }
 
 form {
@@ -78,5 +87,6 @@ footer {
   font-style: oblique;
   margin: 0 auto;
   text-align: center;
+  padding-top: 15px;
   width: 100%
 }
