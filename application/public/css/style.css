@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  background: lightsalmon;
+  background: lavenderblush;
 }
 
 h1 {
@@ -28,12 +28,55 @@ h1 {
   outline: black groove 3px;
 }
 
-footer {
-  font-style: oblique;
-  position: fixed;
-  bottom: 0;
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
 }
 
 p {
   font-size: 18px;
+}
+
+label {
+  padding-top: 20px;
+  display: block;
+  font-weight: bolder;
+}
+
+input {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 5px 5px 5px 5px;
+}
+
+input:focus {
+  background-color: #c7d9ff;
+  border: 2px solid #555;
+}
+
+input[type=submit] {
+  text-align: center;
+  background-color: white;
+}
+
+form {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  font-style: oblique;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%
 }
