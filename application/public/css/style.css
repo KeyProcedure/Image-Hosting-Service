@@ -19,13 +19,16 @@ a {
 }
 
 a:hover {
-  background: #b2c0ff;
+  background: #323f5a;
+  opacity: 65%;
+  border-radius: 3px;
 }
 
 h1 {
   text-align: center;
   letter-spacing: 2px;
   outline: black groove 3px;
+  border-radius: 5px;
 }
 
 h2 {
@@ -54,6 +57,7 @@ input {
   text-align: center;
   display: block;
   padding: 5px 5px 5px 5px;
+  border-radius: 5px;
 }
 
 input:focus {
@@ -70,7 +74,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   transition: .01s;
-  background-color: #c7d9ff;
+  background-color: #788bc4;
 }
 
 form {
