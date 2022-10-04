@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>View Post</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <a href="index.html">Index</a>
             <a href="login.html">Login</a>
             <a href="registration.html">Registration</a>
@@ -19,23 +20,22 @@
     </header>
 
     <main>
-        <p>View an individual image post</p>
+        <h2>View an individual image post</h2>
 
         <form>
             <label for="postTitle"> Post Title</label>
-            <input type="text" id="postTitle" placeholder="title"/>
+            <input type="text" id="postTitle" placeholder="Post Title"/>
 
             <label for="postAuthor"> Post Author</label>
-            <input type="text" id="postAuthor" placeholder="author"/>
+            <input type="text" id="postAuthor" placeholder="Post Author"/>
 
             <label for="creationTime"> Creation Time</label>
-            <input type="text" id="creationTime" placeholder="time"/>
+            <input type="text" id="creationTime" placeholder="Creation Time"/>
 
-            <br/>
             <input type="submit" value="View Image">
         </form>
 
-        <p>Image Post Result: </p>
+        <h3>Image Post Result: </h3>
         <img src="https://fakeimg.pl/300/" alt="">
     </main>
 </body>

@@ -1,8 +1,109 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gainsboro;
+}
+
+.container {
+  display: flex;
 }
 
 a {
-  color: #00B7FF;
+  flex: 1;
+  font-size: 16px;
+  font-family: "Arial Black", serif;
+  color: dodgerblue;
+  line-height: 2;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #323f5a;
+  opacity: 65%;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  outline: black groove 3px;
+  border-radius: 5px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
+label {
+  padding-top: 20px;
+  display: block;
+  font-weight: bolder;
+}
+
+input {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+input:focus {
+  background-color: #c7d9ff;
+  border: 2px solid #555;
+}
+
+input[type=submit] {
+  text-align: center;
+  margin-top: 15px;
+  background-color: white;
+}
+
+input[type=submit]:hover {
+  transition: .0001s;
+  background-color: #788bc4;
+}
+
+input[type=submit]:focus {
+  transition: .0001s;
+  background-color: #a3b9ff;
+}
+
+input[type=file] {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 2px solid #555;
+  background-color: white;
+}
+
+input[type=file]:focus {
+  background-color: #c7d9ff;
+}
+
+input[type=checkbox] {
+  margin-bottom: 15px;
+}
+
+form {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  font-style: oblique;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  width: 100%
 }
