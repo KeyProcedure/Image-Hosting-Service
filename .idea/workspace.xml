@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="added username validation">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="added password validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
@@ -61,7 +61,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="7712000" />
+      <workItem from="1665769142675" duration="10476000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665773094980</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added password validation">
+      <created>1665784094703</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665784094703</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +236,7 @@
     <MESSAGE value="updated input form colors and borders" />
     <MESSAGE value="Added js file and references" />
     <MESSAGE value="added username validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added username validation" />
+    <MESSAGE value="added password validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added password validation" />
   </component>
 </project>
