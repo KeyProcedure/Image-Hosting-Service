@@ -35,6 +35,12 @@ h2, h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: lighter;
+}
+
 p {
   font-size: 18px;
   text-align: center;

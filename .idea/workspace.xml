@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="updated input form colors and borders">
-      <change afterPath="$PROJECT_DIR$/application/public/js/main.js" afterDir="false" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Added js file and references">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/postimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/postimage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/viewpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/viewpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +65,8 @@
       <workItem from="1663694676569" duration="6046000" />
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
+      <workItem from="1665713945121" duration="1085000" />
+      <workItem from="1665769142675" duration="3891000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665683671745</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added js file and references">
+      <created>1665685392670</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665685392670</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +225,7 @@
     <MESSAGE value="updated html pages and added style css file" />
     <MESSAGE value="updated html pages and css content" />
     <MESSAGE value="updated input form colors and borders" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated input form colors and borders" />
+    <MESSAGE value="Added js file and references" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added js file and references" />
   </component>
 </project>

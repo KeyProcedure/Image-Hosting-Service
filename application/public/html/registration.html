@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script defer type="text/javascript" src="../js/main.js"></script>
+    <script defer type="text/javascript" src="../js/registration.js"></script>
 </head>
 
 <body>
@@ -23,28 +23,30 @@
     <main>
         <h2>Create your account</h2>
 
-        <form>
-            <label for="username"> Username</label>
+        <form name="registration" onsubmit="return validateRegistration();">
+            <label for="username">Username</label>
             <input type="text" id="username" placeholder="Username"/>
 
-            <label for="email"> Email</label>
+            <p id="usernameError" style="font-size: .7rem; color: black">you can use letters and numbers</p>
+
+            <label for="email">Email</label>
             <input type="email" id="email" placeholder="Email"/>
 
-            <label for="password"> Password</label>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password"/>
 
-            <label for="confirm password"> Confirm Password</label>
+            <label for="confirm password">Confirm Password</label>
             <input type="password" id="confirm password" placeholder="Confirm Password"/>
 
-            <label for="ageCheck"> I confirm that I am 13+ years of age</label>
+            <label for="ageCheck">I confirm that I am 13+ years of age</label>
             <input type="checkbox" id="ageCheck"/>
 
             <a href="">TOS and Privacy rules</a>
 
-            <label for="TOSCheck"> I accept the TOS and Privacy rules</label>
+            <label for="TOSCheck">I accept the TOS and Privacy rules</label>
             <input type="checkbox" id="TOSCheck"/>
 
-            <input type="submit" value="Submit">
+            <input id="registrationSubmit" type="submit" value="Submit">
         </form>
     </main>
 </body>
