@@ -129,11 +129,3 @@ function isSpecialChar(charValue) {
         charValue === 64 || charValue === 35 || charValue === 36 || charValue === 94 || charValue === 38 || charValue === 126 ||
         charValue === 91 || charValue === 93;
 }
-
-
-
-
-
-
-
-

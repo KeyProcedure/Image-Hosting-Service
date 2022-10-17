@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: gainsboro;
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -108,8 +108,39 @@ img {
 
 footer {
   font-style: oblique;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 15px;
-  width: 100%
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.object-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px 20px;
+  justify-content: center;
+}
+
+.object-card {
+  flex: 0;
+  flex-basis: 30%;
+  margin: 2px;
+  border: 6px inset #2b8ffc;
+}
+
+.object-image {
+  height: 32rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.object-title {
+
 }

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="completed registration validation">
-      <change beforePath="$PROJECT_DIR$/application/public/html/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/registration.html" afterDir="false" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="added requirement for email field">
+      <change afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/viewpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/viewpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Ex1wAHt9Nk2gDqmLIuOC2KANfu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +52,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/application/public/js/index.js" working-dir="$PROJECT_DIR$/application/public/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +77,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="10545000" />
+      <workItem from="1665769142675" duration="35167000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -187,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665786788182</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added requirement for email field">
+      <created>1665786865371</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665786865371</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +268,7 @@
     <MESSAGE value="added username validation" />
     <MESSAGE value="added password validation" />
     <MESSAGE value="completed registration validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed registration validation" />
+    <MESSAGE value="added requirement for email field" />
+    <option name="LAST_COMMIT_MESSAGE" value="added requirement for email field" />
   </component>
 </project>
