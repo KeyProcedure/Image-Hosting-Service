@@ -1,5 +1,6 @@
 fetchProducts();
 let count = 0;
+let intervalID = null;
 
 function fetchProducts() {
     fetch("https://picsum.photos/v2/list?page=2&limit=100")
@@ -9,11 +10,14 @@ function fetchProducts() {
         })
         .then(function(data) {
             let container = document.getElementById('object-list');
+            let containerFragment = document.createDocumentFragment();
+
             data.forEach(function(object) {
-                buildCardsUsingDOMAPI(container, object);
+                buildCardsUsingDOMAPI(containerFragment, object);
                 count++;
                 document.querySelector('.counter').innerHTML = "" + count;
             });
+            container.appendChild(containerFragment);
     });
 }
 
@@ -31,24 +35,40 @@ function buildCardsUsingDOMAPI(container, object) {
     imgTitle.setAttribute('class', 'object-title');
     imgTitle.appendChild(document.createTextNode(object.author));
     //imgTitle.appendChild(document.createTextNode(object.title));
+
+
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
+    cardDiv.appendChild(document.createTextNode("1"));
+    cardDiv.style.opacity = "1";
 
     container.appendChild(cardDiv);
 }
 
 function removeElement(event) {
     event.currentTarget.removeEventListener('click', event);
-    event.currentTarget.remove();
-    count--;
-    document.querySelector('.counter').innerHTML = "" + count;
+
+    //event.currentTarget.lastChild = "2";
+
+    intervalID = setInterval(fade,50, event.currentTarget);
 }
 
-function fadeOut(event) {
+function fade(currentTarget) {
+    currentTarget.style.opacity -= ".2";
+
+    if (currentTarget.style.opacity <= "0") {
+        clearInterval(intervalID);
+        currentTarget.remove();
+        count--;
+        document.querySelector('.counter').innerHTML = "" + count;
+    }
 
 }
 
-//fade out
+//remove "demo" from header!!!!!!!!!
 //removed from DOM?
 //clear interval
+
+//correct place to set opacity to 1?
+//how to pass intervalID to fade() without global variable?
 //3 items per row if page shrunk
