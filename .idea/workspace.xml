@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="implemented image gallery and counter">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Implemented fade out of image on click event. Working on tracking multiple interval IDs.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="53565000" />
+      <workItem from="1665769142675" duration="55548000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665973904969</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implemented fade out of image on click event. Working on tracking multiple interval IDs.">
+      <created>1666061319353</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666061319353</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +281,7 @@
     <MESSAGE value="completed registration validation" />
     <MESSAGE value="added requirement for email field" />
     <MESSAGE value="implemented image gallery and counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented image gallery and counter" />
+    <MESSAGE value="Implemented fade out of image on click event. Working on tracking multiple interval IDs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented fade out of image on click event. Working on tracking multiple interval IDs." />
   </component>
 </project>

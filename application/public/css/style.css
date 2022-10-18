@@ -133,6 +133,7 @@ footer {
   flex-basis: 30%;
   margin: 2px;
   border: 6px inset #2b8ffc;
+  opacity: 100%;
 }
 
 .object-image {

@@ -1,9 +1,8 @@
 fetchProducts();
 let count = 0;
-let intervalID = null;
 
 function fetchProducts() {
-    fetch("https://picsum.photos/v2/list?page=2&limit=100")
+    fetch("https://picsum.photos/v2/list?page=2&limit=5")
     //fetch("https://jsonplaceholder.typicode.com/albums/2/photos")
         .then(function(response) {
             return response.json();
@@ -36,28 +35,23 @@ function buildCardsUsingDOMAPI(container, object) {
     imgTitle.appendChild(document.createTextNode(object.author));
     //imgTitle.appendChild(document.createTextNode(object.title));
 
-
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
-    cardDiv.appendChild(document.createTextNode("1"));
     cardDiv.style.opacity = "1";
-
     container.appendChild(cardDiv);
 }
 
 function removeElement(event) {
-    event.currentTarget.removeEventListener('click', event);
-
-    //event.currentTarget.lastChild = "2";
-
-    intervalID = setInterval(fade,50, event.currentTarget);
+    event.currentTarget.removeEventListener('click', removeElement);
+    let intervalID = setInterval(fade,50, event.currentTarget);
+    event.currentTarget.setAttribute('interval', intervalID);
 }
 
 function fade(currentTarget) {
     currentTarget.style.opacity -= ".2";
 
     if (currentTarget.style.opacity <= "0") {
-        clearInterval(intervalID);
+        clearInterval(currentTarget.getAttribute('interval'));
         currentTarget.remove();
         count--;
         document.querySelector('.counter').innerHTML = "" + count;
@@ -69,6 +63,5 @@ function fade(currentTarget) {
 //removed from DOM?
 //clear interval
 
-//correct place to set opacity to 1?
-//how to pass intervalID to fade() without global variable?
+//correct place to set initial opacity?
 //3 items per row if page shrunk
