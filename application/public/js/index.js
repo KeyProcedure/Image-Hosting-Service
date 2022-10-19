@@ -2,8 +2,8 @@ fetchProducts();
 let count = 0;
 
 function fetchProducts() {
-    fetch("https://picsum.photos/v2/list?page=2&limit=5")
-    //fetch("https://jsonplaceholder.typicode.com/albums/2/photos")
+    fetch('https://picsum.photos/v2/list?page=2&limit=20')
+    //fetch('https://jsonplaceholder.typicode.com/albums/2/photos')
         .then(function(response) {
             return response.json();
         })
@@ -37,7 +37,8 @@ function buildCardsUsingDOMAPI(container, object) {
 
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
-    cardDiv.style.opacity = "1";
+    cardDiv.style.opacity = '1';
+
     container.appendChild(cardDiv);
 }
 
@@ -48,9 +49,9 @@ function removeElement(event) {
 }
 
 function fade(currentTarget) {
-    currentTarget.style.opacity -= ".2";
+    currentTarget.style.opacity -= '.2';
 
-    if (currentTarget.style.opacity <= "0") {
+    if (currentTarget.style.opacity <= '0') {
         clearInterval(currentTarget.getAttribute('interval'));
         currentTarget.remove();
         count--;
@@ -59,9 +60,7 @@ function fade(currentTarget) {
 
 }
 
-//remove "demo" from header!!!!!!!!!
-//removed from DOM?
-//clear interval
-
-//correct place to set initial opacity?
-//3 items per row if page shrunk
+// submit button reset color
+// correct place to set initial opacity
+// flex wrapper to keep footer on the bottom
+// registration page list all requirements
