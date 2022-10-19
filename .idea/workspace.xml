@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Implemented fade out of image on click event. Working on tracking multiple interval IDs.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Created attribute on cardDiv to store intervalID. Fixed removeEventListener.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/html/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="55548000" />
+      <workItem from="1665769142675" duration="64224000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -223,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666061319353</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Created attribute on cardDiv to store intervalID. Fixed removeEventListener.">
+      <created>1666063374035</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666063374035</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +292,7 @@
     <MESSAGE value="added requirement for email field" />
     <MESSAGE value="implemented image gallery and counter" />
     <MESSAGE value="Implemented fade out of image on click event. Working on tracking multiple interval IDs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented fade out of image on click event. Working on tracking multiple interval IDs." />
+    <MESSAGE value="Created attribute on cardDiv to store intervalID. Fixed removeEventListener." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created attribute on cardDiv to store intervalID. Fixed removeEventListener." />
   </component>
 </project>
