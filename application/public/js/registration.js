@@ -1,4 +1,4 @@
-const button = document.getElementById("registrationSubmit");
+const button = document.getElementById('registrationSubmit');
 button.addEventListener('click', validateRegistration);
 
 function validateRegistration() {
@@ -8,23 +8,23 @@ function validateRegistration() {
 }
 
 function validateUsername() {
-    let userName = document.getElementById("username").value;
+    let userName = document.getElementById('username').value;
     let firstChar = userName.charCodeAt(0);
     let valid = true;
 
     if (userName.length < 3) {
-        document.getElementById("usernameMsg").innerHTML = "Sorry, your username must be at least 3 characters long";
+        document.getElementById('usernameMsg').innerHTML = 'Sorry, your username must be at least 3 characters long';
         valid = false;
     }
     else if (!isLowerCase(firstChar) && !isUpperCase(firstChar)) {
-        document.getElementById("usernameMsg").innerHTML = "Sorry, your username must begin with an alphabetical character";
+        document.getElementById('usernameMsg').innerHTML = 'Sorry, your username must begin with an alphabetical character';
         valid = false;
     }
     else {
         for (let i = 1; i < userName.length; i++) {
             let charValue = userName.charCodeAt(i);
             if (!isLowerCase(charValue) && !isUpperCase(charValue) && !isDigit(charValue)) {
-                document.getElementById("usernameMsg").innerHTML = "Sorry, your username must consist of only letters and numbers";
+                document.getElementById('usernameMsg').innerHTML = 'Sorry, your username must consist of only letters and numbers';
                 valid = false;
                 break;
             }
@@ -32,27 +32,27 @@ function validateUsername() {
     }
 
     if (!valid) {
-        document.getElementById("usernameMsg").style.color = 'red';
-        document.getElementById("username").style.borderColor = 'red';
+        document.getElementById('usernameMsg').style.color = 'red';
+        document.getElementById('username').style.borderColor = 'red';
         return false;
     }
     else {
-        document.getElementById("usernameMsg").innerHTML = "Username satisfies all requirements";
-        document.getElementById("usernameMsg").style.color = 'black';
-        document.getElementById("username").style.borderColor = 'black';
+        document.getElementById('usernameMsg').innerHTML = 'Username satisfies all requirements';
+        document.getElementById('usernameMsg').style.color = 'black';
+        document.getElementById('username').style.borderColor = 'black';
         return true;
     }
 }
 
 function validatePassword() {
-    let password = document.getElementById("password").value;
+    let password = document.getElementById('password').value;
     let valid = true;
     let upperCase = false;
     let digit = false;
     let specialChar = false;
 
     if (password.length < 8) {
-        document.getElementById("passwordMsg").innerHTML = "Sorry, your password must be at least 8 characters long";
+        document.getElementById('passwordMsg').innerHTML = 'Sorry, your password must be at least 8 characters long';
         valid = false;
     }
     else {
@@ -67,47 +67,48 @@ function validatePassword() {
         }
 
         if (!upperCase) {
-            document.getElementById("passwordMsg").innerHTML = "Sorry, your password must contain an uppercase letter";
+            document.getElementById('passwordMsg').innerHTML = 'Sorry, your password must contain an uppercase letter';
             valid = false;
         }
         else if (!digit) {
-            document.getElementById("passwordMsg").innerHTML = "Sorry, your password must contain a digit";
+            document.getElementById('passwordMsg').innerHTML = 'Sorry, your password must contain a digit';
             valid = false;
         }
         else if (!specialChar) {
-            document.getElementById("passwordMsg").innerHTML = "Sorry, your password must contain one of the following: / * - + ! @ # $ ^ & ~ [ ]";
+            document.getElementById('passwordMsg').innerHTML = 'Sorry, your password must contain one of the following: ' +
+                '/ * - + ! @ # $ ^ & ~ [ ]';
             valid = false;
         }
     }
 
     if (!valid) {
-        document.getElementById("passwordMsg").style.color = 'red';
-        document.getElementById("password").style.borderColor = 'red';
+        document.getElementById('passwordMsg').style.color = 'red';
+        document.getElementById('password').style.borderColor = 'red';
         return false;
     }
     else {
-        document.getElementById("passwordMsg").innerHTML = "Password satisfies all requirements";
-        document.getElementById("passwordMsg").style.color = 'black';
-        document.getElementById("password").style.borderColor = 'black';
+        document.getElementById('passwordMsg').innerHTML = 'Password satisfies all requirements';
+        document.getElementById('passwordMsg').style.color = 'black';
+        document.getElementById('password').style.borderColor = 'black';
         return validateConfirmPassword();
     }
 }
 
 function validateConfirmPassword() {
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirmPassword').value;
 
     if (password.localeCompare(confirmPassword) === 0) {
-        document.getElementById("confirmPasswordMsg").innerHTML = "Passwords match";
-        document.getElementById("confirmPasswordMsg").style.color = 'black';
-        document.getElementById("confirmPassword").style.borderColor = 'black';
+        document.getElementById('confirmPasswordMsg').innerHTML = 'Passwords match';
+        document.getElementById('confirmPasswordMsg').style.color = 'black';
+        document.getElementById('confirmPassword').style.borderColor = 'black';
         return true;
     }
     else {
-        document.getElementById("confirmPasswordMsg").innerHTML = "Passwords didn't match, try again";
-        document.getElementById("confirmPasswordMsg").style.color = 'red';
-        document.getElementById("confirmPassword").value = "";
-        document.getElementById("confirmPassword").style.borderColor = 'red';
+        document.getElementById('confirmPasswordMsg').innerHTML = 'Passwords didn\"t match, try again';
+        document.getElementById('confirmPasswordMsg').style.color = 'red';
+        document.getElementById('confirmPassword').value = "";
+        document.getElementById('confirmPassword').style.borderColor = 'red';
         return false;
     }
 }
