@@ -18,6 +18,7 @@ function resetValidity() {
 
 function validateRegistration() {
     validateUsername();
+    validateEmail();
     validatePassword();
 }
 
@@ -28,18 +29,21 @@ function validateUsername() {
     let valid = true;
 
     if (username.length < 3) {
-        usernameMsg.innerHTML = 'Sorry, your username must be at least 3 characters long';
+        usernameMsg.innerHTML = 'Your username must be at least 3 characters long';
+        usernameInputField.setCustomValidity('Your username must be at least 3 characters long.');
         valid = false;
     }
     else if (!isLowerCaseChar(firstChar) && !isUpperCaseChar(firstChar)) {
-        usernameMsg.innerHTML = 'Sorry, your username must begin with an alphabetical character';
+        usernameMsg.innerHTML = 'Your username must begin with an alphabetical character';
+        usernameInputField.setCustomValidity('Your username must begin with an alphabetical character.');
         valid = false;
     }
     else {
         for (let i = 1; i < username.length; i++) {
             let charValue = username.charCodeAt(i);
             if (!isLowerCaseChar(charValue) && !isUpperCaseChar(charValue) && !isDigit(charValue)) {
-                usernameMsg.innerHTML = 'Sorry, your username must consist of only letters and numbers';
+                usernameMsg.innerHTML = 'Your username must consist of only letters and numbers';
+                usernameInputField.setCustomValidity('Your username must consist of only letters and numbers.');
                 valid = false;
                 break;
             }
@@ -55,7 +59,22 @@ function validateUsername() {
     else {
         usernameMsg.style.color = 'red';
         usernameInputField.style.borderColor = 'red';
-        usernameInputField.setCustomValidity('Invalid username.');
+    }
+}
+
+function validateEmail() {
+    let email = document.getElementById('email');
+    let emailMsg = document.getElementById('emailMsg');
+
+    if (!email.validity.valid) {
+        email.style.borderColor = 'red';
+        emailMsg.style.color = 'red';
+        emailMsg.innerHTML = 'Your email is invalid'
+    }
+    else {
+        email.style.borderColor = 'black';
+        emailMsg.style.color = 'black';
+        emailMsg.innerHTML = 'Your email satisfies all requirements'
     }
 }
 
@@ -68,7 +87,8 @@ function validatePassword() {
     let specialChar = false;
 
     if (password.value.length < 8) {
-        passwordMsg.innerHTML = 'Sorry, your password must be at least 8 characters long';
+        passwordMsg.innerHTML = 'Your password must be at least 8 characters long';
+        password.setCustomValidity('Your password must be at least 8 characters long.');
         valid = false;
     }
     else {
@@ -83,16 +103,20 @@ function validatePassword() {
         }
 
         if (!upperCase) {
-            passwordMsg.innerHTML = 'Sorry, your password must contain an uppercase letter';
+            passwordMsg.innerHTML = 'Your password must contain an uppercase letter';
+            password.setCustomValidity('Your password must contain an uppercase letter.');
             valid = false;
         }
         else if (!digit) {
-            passwordMsg.innerHTML = 'Sorry, your password must contain a digit';
+            passwordMsg.innerHTML = 'Your password must contain a digit';
+            password.setCustomValidity('Your password must contain a digit.');
             valid = false;
         }
         else if (!specialChar) {
-            passwordMsg.innerHTML = 'Sorry, your password must contain one of the following: ' +
+            passwordMsg.innerHTML = 'Your password must contain one of the following: ' +
                 '/ * - + ! @ # $ ^ & ~ [ ]';
+            password.setCustomValidity('Your password must contain one of the following: ' +
+                '/ * - + ! @ # $ ^ & ~ [ ]');
             valid = false;
         }
     }
@@ -107,7 +131,6 @@ function validatePassword() {
     else {
         passwordMsg.style.color = 'red';
         password.style.borderColor = 'red';
-        password.setCustomValidity('Invalid password.');
     }
 }
 
@@ -128,7 +151,7 @@ function validateConfirmPassword() {
         confirmPasswordMsg.style.color = 'red';
         confirmPassword.value = "";
         confirmPassword.style.borderColor = 'red';
-        confirmPassword.setCustomValidity('Passwords don\'t match.');
+        confirmPassword.setCustomValidity('Passwords don\'t match, try again.');
         return false;
     }
 }

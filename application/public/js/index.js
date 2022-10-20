@@ -37,6 +37,7 @@ function buildCardsUsingDOMAPI(container, object) {
 
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
+
     cardDiv.style.opacity = '1';
 
     container.appendChild(cardDiv);
@@ -57,10 +58,10 @@ function fade(currentTarget) {
         count--;
         document.querySelector('.counter').innerHTML = "" + count;
     }
-
 }
 
 // change email text box to red when input is invalid
-// correct place to set initial opacity
-// flex wrapper to keep footer on the bottom
-// registration page list all requirements
+
+// correct place to set initial opacity?
+// flex wrapper to keep footer on the bottom?
+// registration page list all requirements?
