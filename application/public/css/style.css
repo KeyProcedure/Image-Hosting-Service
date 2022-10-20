@@ -118,12 +118,10 @@ footer {
 }
 
 .object-list {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 10px 3px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .object-card {
@@ -139,6 +137,6 @@ footer {
 }
 
 .object-title {
-
+  margin: 2px;
 }
 

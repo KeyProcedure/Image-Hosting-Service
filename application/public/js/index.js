@@ -1,9 +1,9 @@
 fetchProducts();
-let count = 0;
 
 function fetchProducts() {
-    fetch('https://picsum.photos/v2/list?page=2&limit=20')
+    fetch('https://picsum.photos/v2/list?page=2&limit=10')
     //fetch('https://jsonplaceholder.typicode.com/albums/2/photos')
+
         .then(function(response) {
             return response.json();
         })
@@ -13,55 +13,45 @@ function fetchProducts() {
 
             data.forEach(function(object) {
                 buildCardsUsingDOMAPI(containerFragment, object);
-                count++;
-                document.querySelector('.counter').innerHTML = "" + count;
             });
+
             container.appendChild(containerFragment);
+            document.querySelector('.counter').innerHTML = "" + container.childElementCount;
     });
 }
 
 function buildCardsUsingDOMAPI(container, object) {
     let cardDiv = document.createElement('div');
-    cardDiv.addEventListener('click', removeElement);
     cardDiv.setAttribute('class', 'object-card');
 
     let imgElement = document.createElement('img');
-    imgElement.setAttribute('src', object.download_url);
-    //imgElement.setAttribute('src', object.url);
     imgElement.setAttribute('class', 'object-image');
+    //imgElement.setAttribute('src', object.url);
+    imgElement.setAttribute('src', object.download_url);
 
     let imgTitle = document.createElement('p');
     imgTitle.setAttribute('class', 'object-title');
-    imgTitle.appendChild(document.createTextNode(object.author));
     //imgTitle.appendChild(document.createTextNode(object.title));
+    imgTitle.appendChild(document.createTextNode(object.author));
 
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
-
-    cardDiv.style.opacity = '1';
-
     container.appendChild(cardDiv);
+
+    cardDiv.addEventListener('click', function(event) {
+        let cardDiv = event.currentTarget;
+        let currOpacity = 1;
+
+        let intervalID = setInterval(function() {
+            cardDiv.style.opacity = currOpacity;
+            currOpacity -= .2;
+            if (currOpacity <= 0) {
+                clearInterval(intervalID);
+                document.querySelector('.counter').innerHTML = "" + (cardDiv.parentElement.childElementCount - 1);
+                cardDiv.remove();
+            }
+        }, 75)
+    });
 }
 
-function removeElement(event) {
-    event.currentTarget.removeEventListener('click', removeElement);
-    let intervalID = setInterval(fade,50, event.currentTarget);
-    event.currentTarget.setAttribute('interval', intervalID);
-}
-
-function fade(currentTarget) {
-    currentTarget.style.opacity -= '.2';
-
-    if (currentTarget.style.opacity <= '0') {
-        clearInterval(currentTarget.getAttribute('interval'));
-        currentTarget.remove();
-        count--;
-        document.querySelector('.counter').innerHTML = "" + count;
-    }
-}
-
-// change email text box to red when input is invalid
-
-// correct place to set initial opacity?
-// flex wrapper to keep footer on the bottom?
-// registration page list all requirements?
+// remove event listener?

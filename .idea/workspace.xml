@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="removed onsubmit trigger">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Added popup message for input field validity check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="74990000" />
+      <workItem from="1665769142675" duration="83693000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666226017245</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added popup message for input field validity check">
+      <created>1666228277820</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666228277820</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +338,7 @@
     <MESSAGE value="updated double quotes to single quotes" />
     <MESSAGE value="Updated flexbox setting for images" />
     <MESSAGE value="removed onsubmit trigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed onsubmit trigger" />
+    <MESSAGE value="Added popup message for input field validity check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added popup message for input field validity check" />
   </component>
 </project>
