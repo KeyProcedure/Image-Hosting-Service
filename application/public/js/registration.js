@@ -2,19 +2,19 @@ const submitButton = document.getElementById('registrationSubmit');
 submitButton.addEventListener('click', validateRegistration);
 
 const usernameInputField = document.getElementById('username');
-usernameInputField.addEventListener('keydown', resetValidity);
+usernameInputField.addEventListener('keydown', function() {
+    usernameInputField.setCustomValidity('')
+});
 
 const passwordInputField = document.getElementById('password');
-passwordInputField.addEventListener('keydown', resetValidity);
+passwordInputField.addEventListener('keydown', function() {
+    passwordInputField.setCustomValidity('')
+});
 
 const confirmPasswordInputField = document.getElementById('confirmPassword');
-confirmPasswordInputField.addEventListener('keydown', resetValidity);
-
-function resetValidity() {
-    usernameInputField.setCustomValidity('');
-    passwordInputField.setCustomValidity('');
-    confirmPasswordInputField.setCustomValidity('');
-}
+confirmPasswordInputField.addEventListener('keydown', function() {
+    confirmPasswordInputField.setCustomValidity('')
+});
 
 function validateRegistration() {
     validateUsername();
@@ -29,21 +29,24 @@ function validateUsername() {
     let valid = true;
 
     if (username.length < 3) {
-        usernameMsg.innerHTML = 'Your username must be at least 3 characters long';
-        usernameInputField.setCustomValidity('Your username must be at least 3 characters long.');
+        let errorMsg = 'Your username must be at least 3 characters long'
+        usernameMsg.innerHTML = errorMsg;
+        usernameInputField.setCustomValidity(errorMsg);
         valid = false;
     }
     else if (!isLowerCaseChar(firstChar) && !isUpperCaseChar(firstChar)) {
-        usernameMsg.innerHTML = 'Your username must begin with an alphabetical character';
-        usernameInputField.setCustomValidity('Your username must begin with an alphabetical character.');
+        let errorMsg = 'Your username must begin with an alphabetical character';
+        usernameMsg.innerHTML = errorMsg;
+        usernameInputField.setCustomValidity(errorMsg);
         valid = false;
     }
     else {
         for (let i = 1; i < username.length; i++) {
             let charValue = username.charCodeAt(i);
             if (!isLowerCaseChar(charValue) && !isUpperCaseChar(charValue) && !isDigit(charValue)) {
-                usernameMsg.innerHTML = 'Your username must consist of only letters and numbers';
-                usernameInputField.setCustomValidity('Your username must consist of only letters and numbers.');
+                let errorMsg = 'Your username must consist of only letters and numbers'
+                usernameMsg.innerHTML = errorMsg;
+                usernameInputField.setCustomValidity(errorMsg);
                 valid = false;
                 break;
             }
@@ -54,7 +57,6 @@ function validateUsername() {
         usernameMsg.innerHTML = 'Username satisfies all requirements';
         usernameMsg.style.color = 'black';
         usernameInputField.style.borderColor = 'black';
-        usernameInputField.setCustomValidity('');
     }
     else {
         usernameMsg.style.color = 'red';
@@ -69,7 +71,7 @@ function validateEmail() {
     if (!email.validity.valid) {
         email.style.borderColor = 'red';
         emailMsg.style.color = 'red';
-        emailMsg.innerHTML = 'Your email is invalid'
+        emailMsg.innerHTML = 'Email must be valid'
     }
     else {
         email.style.borderColor = 'black';
@@ -87,8 +89,9 @@ function validatePassword() {
     let specialChar = false;
 
     if (password.value.length < 8) {
-        passwordMsg.innerHTML = 'Your password must be at least 8 characters long';
-        password.setCustomValidity('Your password must be at least 8 characters long.');
+        let errorMsg = 'Your password must be at least 8 characters long'
+        passwordMsg.innerHTML = errorMsg;
+        password.setCustomValidity(errorMsg);
         valid = false;
     }
     else {
@@ -103,20 +106,22 @@ function validatePassword() {
         }
 
         if (!upperCase) {
-            passwordMsg.innerHTML = 'Your password must contain an uppercase letter';
-            password.setCustomValidity('Your password must contain an uppercase letter.');
+            let errorMsg = 'Your password must contain an uppercase letter';
+            passwordMsg.innerHTML = errorMsg;
+            password.setCustomValidity(errorMsg);
             valid = false;
         }
         else if (!digit) {
-            passwordMsg.innerHTML = 'Your password must contain a digit';
-            password.setCustomValidity('Your password must contain a digit.');
+            let errorMsg = 'Your password must contain a digit';
+            passwordMsg.innerHTML = errorMsg;
+            password.setCustomValidity(errorMsg);
             valid = false;
         }
         else if (!specialChar) {
-            passwordMsg.innerHTML = 'Your password must contain one of the following: ' +
+            let errorMsg = 'Your password must contain one of the following: ' +
                 '/ * - + ! @ # $ ^ & ~ [ ]';
-            password.setCustomValidity('Your password must contain one of the following: ' +
-                '/ * - + ! @ # $ ^ & ~ [ ]');
+            passwordMsg.innerHTML = errorMsg;
+            password.setCustomValidity(errorMsg);
             valid = false;
         }
     }
@@ -125,7 +130,6 @@ function validatePassword() {
         passwordMsg.innerHTML = 'Password satisfies all requirements';
         passwordMsg.style.color = 'black';
         password.style.borderColor = 'black';
-        password.setCustomValidity('');
         validateConfirmPassword();
     }
     else {
@@ -143,15 +147,15 @@ function validateConfirmPassword() {
         confirmPasswordMsg.innerHTML = 'Passwords match';
         confirmPasswordMsg.style.color = 'black';
         confirmPassword.style.borderColor = 'black';
-        confirmPassword.setCustomValidity('');
         return true;
     }
     else {
-        confirmPasswordMsg.innerHTML = 'Passwords don\"t match, try again';
+        let errorMsg = 'Passwords don\'t match, try again';
+        confirmPasswordMsg.innerHTML = errorMsg;
+        confirmPassword.setCustomValidity(errorMsg);
         confirmPasswordMsg.style.color = 'red';
         confirmPassword.value = "";
         confirmPassword.style.borderColor = 'red';
-        confirmPassword.setCustomValidity('Passwords don\'t match, try again.');
         return false;
     }
 }
