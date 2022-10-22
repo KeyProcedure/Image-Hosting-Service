@@ -1,9 +1,7 @@
 fetchProducts();
 
 function fetchProducts() {
-    fetch('https://picsum.photos/v2/list?page=2&limit=10')
-    //fetch('https://jsonplaceholder.typicode.com/albums/2/photos')
-
+    fetch('https://jsonplaceholder.typicode.com/albums/2/photos')
         .then(function(response) {
             return response.json();
         })
@@ -26,13 +24,11 @@ function buildCardsUsingDOMAPI(container, object) {
 
     let imgElement = document.createElement('img');
     imgElement.setAttribute('class', 'object-image');
-    //imgElement.setAttribute('src', object.url);
-    imgElement.setAttribute('src', object.download_url);
+    imgElement.setAttribute('src', object.url);
 
     let imgTitle = document.createElement('p');
     imgTitle.setAttribute('class', 'object-title');
-    //imgTitle.appendChild(document.createTextNode(object.title));
-    imgTitle.appendChild(document.createTextNode(object.author));
+    imgTitle.appendChild(document.createTextNode(object.title));
 
     cardDiv.appendChild(imgElement);
     cardDiv.appendChild(imgTitle);
@@ -43,15 +39,15 @@ function buildCardsUsingDOMAPI(container, object) {
         let currOpacity = 1;
 
         let intervalID = setInterval(function() {
+            let container = document.getElementById('object-list');
             cardDiv.style.opacity = currOpacity;
             currOpacity -= .2;
+
             if (currOpacity <= 0) {
                 clearInterval(intervalID);
-                document.querySelector('.counter').innerHTML = "" + (cardDiv.parentElement.childElementCount - 1);
                 cardDiv.remove();
+                document.querySelector('.counter').innerHTML = "" + container.childElementCount;
             }
         }, 75)
     });
 }
-
-// remove event listener?

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Added popup message for input field validity check">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Simplified fade method. Changed layout to grid.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <workItem from="1664568457730" duration="811000" />
       <workItem from="1664569275823" duration="307000" />
       <workItem from="1665713945121" duration="1085000" />
-      <workItem from="1665769142675" duration="83693000" />
+      <workItem from="1665769142675" duration="88504000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -273,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666228277820</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Simplified fade method. Changed layout to grid.">
+      <created>1666307864712</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666307864712</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +320,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created html pages" />
     <MESSAGE value="completed registration page" />
     <MESSAGE value="completed postImage page" />
     <MESSAGE value="completed viewPost page" />
@@ -339,6 +344,7 @@
     <MESSAGE value="Updated flexbox setting for images" />
     <MESSAGE value="removed onsubmit trigger" />
     <MESSAGE value="Added popup message for input field validity check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added popup message for input field validity check" />
+    <MESSAGE value="Simplified fade method. Changed layout to grid." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified fade method. Changed layout to grid." />
   </component>
 </project>
