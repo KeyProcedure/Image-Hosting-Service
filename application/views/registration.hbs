@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+
+    <main>
+        <h2>Create your account</h2>
+
+        <form name="registration">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required/>
+            <p id="usernameMsg" style="font-size: .7rem; color: black">You can use letters and numbers</p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required/>
+            <p id="emailMsg" style="font-size: .7rem; color: black">Please enter your email address</p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password"/>
+            <p id="passwordMsg" style="font-size: .7rem; color: black">You can use letters, numbers, and symbols</p>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+            <p id="confirmPasswordMsg" style="font-size: .7rem; color: black">Please confirm your password</p>
+
+            <label for="ageCheck">I confirm that I am 13+ years of age</label>
+            <input type="checkbox" id="ageCheck" required/>
+
+            <a href="">TOS and Privacy rules</a>
+
+            <label for="TOSCheck">I accept the TOS and Privacy rules</label>
+            <input type="checkbox" id="TOSCheck" required/>
+
+            <input id="registrationSubmit" type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>

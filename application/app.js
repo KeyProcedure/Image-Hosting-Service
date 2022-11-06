@@ -25,6 +25,26 @@ app.engine(
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
+/*
+    localhost:3000/
+    express --> mw1 --> mw2 --> mw3 --> router.get
+ */
+/*
+app.use(function(req, res, next){
+    console.log(`Middleware 1: ${req.url}`);
+    next();
+})
+
+app.use(function(req, res, next){
+    console.log(`Middleware 2: ${req.headers}`);
+    next();
+})
+
+app.use(function(req, res, next){
+    console.log(`Middleware 3: ${req.method}`);
+    next();
+})
+*/
 
 app.use(logger("dev"));
 app.use(express.json());
