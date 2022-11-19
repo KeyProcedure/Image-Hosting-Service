@@ -43,8 +43,6 @@ router.post("/register", function (req, res, next) {
         res.redirect('/register');
         next(err);
     });
-
-
 });
 
 // Method: POST
@@ -52,9 +50,14 @@ router.post("/register", function (req, res, next) {
 router.post("/login", function (req, res, next) {
     const {username, password} = req.body;
 
+    let loggedUserId;
+    let loggedUsername;
+
     db.query('select id, username, password from users where username=?', [username])
         .then(function ([results, fields]) {
             if (results && results.length === 1) {
+                loggedUserId = results[0].id;
+                loggedUsername = results[0].username;
                 let dbPassword = results[0].password;
                 return bcrypt.compare(password, dbPassword);
             }
@@ -64,6 +67,8 @@ router.post("/login", function (req, res, next) {
         })
         .then(function(passwordsMatched) {
             if (passwordsMatched) {
+                req.session.userId = loggedUserId;
+                req.session.username = loggedUsername;
                 res.redirect('/');
             }
             else {
@@ -74,7 +79,5 @@ router.post("/login", function (req, res, next) {
             next(err);
         })
 });
-
-// router.delete('/login');
 
 module.exports = router;

@@ -5,6 +5,8 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const handlebars = require("express-handlebars");
+const session = require('express-session');
+const MySQLStore = require('express-mysql-session')(session);
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 
@@ -25,34 +27,34 @@ app.engine(
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
-/*
-    localhost:3000/
-    express --> mw1 --> mw2 --> mw3 --> router.get
- */
-/*
-app.use(function(req, res, next){
-    console.log(`Middleware 1: ${req.url}`);
-    next();
-})
+var sessionStore = new MySQLStore({}, require('./conf/database'));
 
-app.use(function(req, res, next){
-    console.log(`Middleware 2: ${req.headers}`);
-    next();
-})
-
-app.use(function(req, res, next){
-    console.log(`Middleware 3: ${req.method}`);
-    next();
-})
-*/
+app.use(
+    session({
+        key: "csid",
+        secret: "csc317 secret",
+        store: sessionStore,
+        resave: false,
+        saveUninitialized: false,
+    })
+);
 
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser("csc317 secret"));
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use("/public", express.static(path.join(__dirname, "public")));
+
+app.use(function(req, res, next){
+    console.log(req.session);
+    if (req.session.username) {
+        res.locals.isLoggedIn = true;
+        res.locals.username = req.session.username;
+    }
+    next();
+})
 
 app.use("/", indexRouter); // route middleware from ./routes/index.js
 app.use("/users", usersRouter); // route middleware from ./routes/users.js
