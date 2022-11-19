@@ -6,22 +6,33 @@
 </head>
 
 <body>
-    <header>
-        <h1>Login</h1>
-    </header>
+<header>
+    <h1>Login</h1>
+</header>
 
-    <main>
-        <h2>Sign in to continue</h2>
+<main>
+    <h2>Sign in to continue</h2>
 
-        <form>
-            <label for="username"> Username</label>
-            <input type="text" id="username" placeholder="username"/>
+    <form name="login"
+          action="/users/login"
+          method="POST"
+          enctype="application/x-www-form-urlencoded">
 
-            <label for="password"> Password</label>
-            <input type="password" id="password" placeholder="password"/>
+        <label for="username"> Username</label>
+        <input type="text"
+               id="username"
+               placeholder="username"
+               name="username"/>
 
-            <input type="submit" value="Submit">
-        </form>
-    </main>
+        <label for="password"> Password</label>
+        <input type="password"
+               id="password"
+               placeholder="password"
+               name="password"/>
+
+        <input type="submit"
+               value="Submit">
+    </form>
+</main>
 </body>
 </html>

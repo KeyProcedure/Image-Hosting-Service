@@ -1,36 +1,80 @@
 var express = require('express');
 var router = express.Router();
+const bcrypt = require('bcrypt');
+const db = require('../conf/database');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+// Method: POST
+// localhost:3000/users/register
+router.post("/register", function (req, res, next) {
+    const {username, email, password} = req.body;
+
+    // server side validation
+    // check for duplicates
+    // insert into db
+    // respond
+
+    db.query('select id from users where username=?', [username])
+        .then(function ([results, fields]) {
+            if (results && results.length === 0) {
+                return db.query('select id from users where email=?', [email])
+            }
+            else {
+                throw new Error('username already exists');
+            }
+        }).then(function ([results, fields]) {
+        if (results && results.length === 0) {
+            return bcrypt.hash(password, 2);
+        }
+        else {
+            throw new Error('email already exists');
+        }
+    }).then(function (hashedPassword) {
+        return db.query('insert into users(username, email, password) value (?,?,?)', [username, email, hashedPassword])
+    })
+
+        .then(function ([results, fields]) {
+            if (results && results.affectedRows === 1) {
+                res.redirect('/login');
+            }
+            else {
+                throw new Error('user could not be made');
+            }
+        }).catch(function (err) {
+        res.redirect('/register');
+        next(err);
+    });
+
+
 });
 
-/*
-function validateUsername(req, res, next) {
-  if (`username is unique`) {
-    next();
-  }
-  else {
-    res.json({message: `username already taken`});
-  }
-}
+// Method: POST
+// localhost:3000/users/login
+router.post("/login", function (req, res, next) {
+    const {username, password} = req.body;
 
-function validateEmail(req, res, next) {
-  if (`email is unique`) {
-    next();
-  }
-  else {
-    res.json({message: `email already taken`});
-  }
-}
+    db.query('select id, username, password from users where username=?', [username])
+        .then(function ([results, fields]) {
+            if (results && results.length === 1) {
+                let dbPassword = results[0].password;
+                return bcrypt.compare(password, dbPassword);
+            }
+            else {
+                throw new Error('Invalid user credentials');
+            }
+        })
+        .then(function(passwordsMatched) {
+            if (passwordsMatched) {
+                res.redirect('/');
+            }
+            else {
+                throw new Error('Invalid user credentials');
+            }
+        })
+        .catch(function (err) {
+            next(err);
+        })
+});
 
-router.post("/register",
-    validateUsername,
-    validateEmail,
-    function(req, res) {
-      res.json({status: 200, message: `user was made.`});
-    });
-*/
+// router.delete('/login');
 
 module.exports = router;
