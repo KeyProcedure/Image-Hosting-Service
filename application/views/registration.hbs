@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Registration</title>
+  <meta charset="UTF-8">
+  <title>Registration</title>
 </head>
 
 <body>
-    <header>
-        <h1>Registration</h1>
-    </header>
+<header>
+  <h1>Registration</h1>
+</header>
 
-    <main>
-        <h2>Create your account</h2>
+<main>
+  <h2>Create your account</h2>
 
-        <form name="registration"
-            method="POST"
-            action="/users/register"
-            enctype="application/x-www-form-urlencoded">
+  <form name="registration"
+        method="POST"
+        action="/users/register"
+        enctype="application/x-www-form-urlencoded">
 
-            <label for="username">Username</label>
-            <input type="text"
-                   id="username"
-                   placeholder="Username"
-                   name="username"
-                   required/>
-            <p id="usernameMsg"
-               style="font-size: .7rem; color: black"
-            >You can use letters and numbers</p>
+    <label for="username">Username</label>
+    <input type="text"
+           id="username"
+           placeholder="Username"
+           name="username"
+           required/>
+    <p id="usernameMsg"
+       style="font-size: .7rem; color: black"
+    >You can use letters and numbers</p>
 
-            <label for="email">Email</label>
-            <input type="email"
-                   id="email"
-                   placeholder="Email"
-                   name="email"
-                   required/>
-            <p id="emailMsg"
-               style="font-size: .7rem; color: black"
-            >Please enter your email address</p>
+    <label for="email">Email</label>
+    <input type="email"
+           id="email"
+           placeholder="Email"
+           name="email"
+           required/>
+    <p id="emailMsg"
+       style="font-size: .7rem; color: black"
+    >Please enter your email address</p>
 
-            <label for="password">Password</label>
-            <input type="password"
-                   id="password"
-                   placeholder="Password"
-                   name="password"/>
-            <p id="passwordMsg"
-               style="font-size: .7rem; color: black"
-            >You can use letters, numbers, and symbols</p>
+    <label for="password">Password</label>
+    <input type="password"
+           id="password"
+           placeholder="Password"
+           name="password"/>
+    <p id="passwordMsg"
+       style="font-size: .7rem; color: black"
+    >You can use letters, numbers, and symbols</p>
 
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password"
-                   id="confirmPassword"
-                   placeholder="Confirm Password"
-                   name="cpassword"/>
-            <p id="confirmPasswordMsg" style="font-size: .7rem; color: black"
-            >Please confirm your password</p>
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password"
+           id="confirmPassword"
+           placeholder="Confirm Password"
+           name="cpassword"/>
+    <p id="confirmPasswordMsg" style="font-size: .7rem; color: black"
+    >Please confirm your password</p>
 
-            <label for="ageCheck">I confirm that I am 13+ years of age</label>
-            <input type="checkbox"
-                   id="ageCheck"
-                   required/>
+    <label for="ageCheck">I confirm that I am 13+ years of age</label>
+    <input type="checkbox"
+           id="ageCheck"
+           required/>
 
-            <a href="">TOS and Privacy rules</a>
+    <a href="">TOS and Privacy rules</a>
 
-            <label for="TOSCheck">I accept the TOS and Privacy rules</label>
-            <input type="checkbox"
-                   id="TOSCheck"
-                   required/>
+    <label for="TOSCheck">I accept the TOS and Privacy rules</label>
+    <input type="checkbox"
+           id="TOSCheck"
+           required/>
 
-            <input id="registrationSubmit"
-                   type="submit"
-                   value="Submit">
-        </form>
-    </main>
+    <input id="registrationSubmit"
+           type="submit"
+           value="Submit">
+  </form>
+</main>
 </body>
 </html>
