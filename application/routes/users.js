@@ -1,17 +1,13 @@
 var express = require('express');
 var router = express.Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt')
+const UserError = require('../helpers/error/UserError');
 const db = require('../conf/database');
 
 // Method: POST
 // localhost:3000/users/register
 router.post("/register", function (req, res, next) {
   const {username, email, password} = req.body;
-
-  // server side validation
-  // check for duplicates
-  // insert into db
-  // respond
 
   db.query('select id from users where username=?', [username])
     .then(function ([results, fields]) {
@@ -34,7 +30,7 @@ router.post("/register", function (req, res, next) {
       if (results && results.affectedRows === 1) {
         res.redirect('/login');
       } else {
-        throw new Error('user could not be made');
+        throw new Error('account could not be made');
       }
     }).catch(function (err) {
     res.redirect('/register');
@@ -58,20 +54,30 @@ router.post("/login", function (req, res, next) {
         let dbPassword = results[0].password;
         return bcrypt.compare(password, dbPassword);
       } else {
-        throw new Error('Invalid user credentials');
+        throw new UserError('Failed Sign In: invalid user credentials', "/login", 200);
       }
     })
     .then(function (passwordsMatched) {
       if (passwordsMatched) {
         req.session.userId = loggedUserId;
         req.session.username = loggedUsername;
-        res.redirect('/');
+        req.flash("success", `Hi ${loggedUsername}, you are now signed in.`);
+        req.session.save(function(saveErr) {
+          res.redirect('/');
+        })
       } else {
-        throw new Error('Invalid user credentials');
+        throw new UserError('Failed Sign In: invalid user credentials', "/login", 200);
       }
     })
     .catch(function (err) {
-      next(err);
+      if (err instanceof UserError) {
+        req.flash("error", err.getMessage());
+        req.session.save(function(saveErr) {
+          res.redirect(err.getRedirectURL());
+        })
+      } else {
+        next(err);
+      }
     })
 });
 
@@ -82,7 +88,7 @@ router.post("/logout", function (req, res, next) {
     } else {
       res.json({
         status: 200,
-        message: "You have been logged out"
+        message: "You have been signed out"
       });
     }
   })

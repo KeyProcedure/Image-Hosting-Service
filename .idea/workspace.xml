@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Completed implementation of sessions. Reformatted code." />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated README with link information.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/middleware/protectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/middleware/protectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/users.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +93,7 @@
       <workItem from="1667626538035" duration="304000" />
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
-      <workItem from="1668708515787" duration="18704000" />
+      <workItem from="1668708515787" duration="21527000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -334,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668977842777</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Updated README with link information.">
+      <created>1668978411630</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668978411630</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated unversioned files" />
     <MESSAGE value="updated html pages and added style css file" />
     <MESSAGE value="updated html pages and css content" />
     <MESSAGE value="updated input form colors and borders" />
@@ -400,6 +412,7 @@
     <MESSAGE value="Implemented server side registration and login communication" />
     <MESSAGE value="Began implementation of sessions" />
     <MESSAGE value="Completed implementation of sessions. Reformatted code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed implementation of sessions. Reformatted code." />
+    <MESSAGE value="Updated README with link information." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README with link information." />
   </component>
 </project>
