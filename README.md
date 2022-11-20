@@ -20,4 +20,5 @@ This repository stores all the code for my web application.
 npm install
 
 ## Run Instructions
-npm start
+npm start  
+localhost:3000
