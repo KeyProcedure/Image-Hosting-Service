@@ -1,14 +1,15 @@
 {{log this}}
 
-<nav class="container">
-  <a href="/">Index</a>
-  {{#if isLoggedIn}}
-    <a id="logout-button">Log Out</a>
-  {{else}}
-    <a href="/login">Log In</a>
-  {{/if}}
-
-  <a href="/register">Registration</a>
-  <a href="/postimage">Post Image</a>
-  <a href="/posts/1">View Post</a>
-</nav>
+<header class="header">
+  <ul class="navBar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/postimage">New Post</a></li>
+    <li><a href="/posts/1">View Post</a></li>
+    <li><a href="/register">Sign Up</a></li>
+    {{#if isLoggedIn}}
+      <li><a id="logout-button">Sign Out</a></li>
+    {{else}}
+      <li><a href="/login">Sign In</a></li>
+    {{/if}}
+  </ul>
+</header>
