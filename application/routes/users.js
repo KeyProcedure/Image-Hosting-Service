@@ -14,28 +14,37 @@ router.post("/register", function (req, res, next) {
       if (results && results.length === 0) {
         return db.query('select id from users where email=?', [email])
       } else {
-        throw new Error('username already exists');
+        throw new UserError('Sign Up Failed: username already exists', "/register", 200);
       }
     }).then(function ([results, fields]) {
     if (results && results.length === 0) {
       return bcrypt.hash(password, 2);
     } else {
-      throw new Error('email already exists');
+      throw new UserError('Sign Up Failed: email already exists', "/register", 200);
     }
   }).then(function (hashedPassword) {
     return db.query('insert into users(username, email, password) value (?,?,?)', [username, email, hashedPassword])
   })
-
     .then(function ([results, fields]) {
       if (results && results.affectedRows === 1) {
-        res.redirect('/login');
+        req.flash("success", `Your account has been created, sign in to continue`);
+        req.session.save(function(saveErr) {
+          res.redirect('/login');
+        })
       } else {
-        throw new Error('account could not be made');
+        throw new UserError('Sign Up Failed: account could not be made', "/register", 200);
       }
-    }).catch(function (err) {
-    res.redirect('/register');
-    next(err);
-  });
+    })
+    .catch(function (err) {
+      if (err instanceof UserError) {
+        req.flash("error", err.getMessage());
+        req.session.save(function(saveErr) {
+          res.redirect(err.getRedirectURL());
+        })
+      } else {
+        next(err);
+      }
+    })
 });
 
 // Method: POST
@@ -61,7 +70,7 @@ router.post("/login", function (req, res, next) {
       if (passwordsMatched) {
         req.session.userId = loggedUserId;
         req.session.username = loggedUsername;
-        req.flash("success", `Hi ${loggedUsername}, you are now signed in.`);
+        req.flash("success", `Hi ${loggedUsername}, you are now signed in`);
         req.session.save(function(saveErr) {
           res.redirect('/');
         })
@@ -93,28 +102,5 @@ router.post("/logout", function (req, res, next) {
     }
   })
 })
+
 module.exports = router;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

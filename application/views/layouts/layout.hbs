@@ -10,9 +10,14 @@
   {{/each}}
 </head>
 <body>
-{{> nav}}
-{{{body}}}
-{{> footer}}
+  {{> nav}}
+
+  {{#if (nonEmptyObject messages)}}
+    {{> flashmessage}}
+  {{/if}}
+
+  {{{body}}}
+  {{> footer}}
 </body>
 
 {{#if isLoggedIn}}

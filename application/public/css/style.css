@@ -140,3 +140,22 @@ footer {
   margin: 2px;
 }
 
+.alert-success, .alert-danger {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  background-color: white;
+  outline: black groove 1px;
+  font-size: 20px;
+
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: green;
+}
+

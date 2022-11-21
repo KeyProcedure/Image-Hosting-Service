@@ -13,7 +13,7 @@ router.get("/login", function (req, res) {
 
 // REGISTRATION VALIDATION IS DISABLED, REMOVE COMMENT TO ENABLE---------------------------------------------------------------
 // Method: GET
-// localhose:3000/register
+// localhost:3000/register
 router.get("/register", function (req, res) {
   res.render('registration', {/*js: ["registration.js"]*/});
 });
