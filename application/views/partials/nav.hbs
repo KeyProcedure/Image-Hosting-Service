@@ -1,14 +1,20 @@
 {{log this}}
 
 <header class="header">
-  <ul class="navBar">
+  <ul class="navBarLeft">
     <li><a href="/">Home</a></li>
     <li><a href="/postimage">New Post</a></li>
+  </ul>
+
+  <ul class="navBarCenter">
     <li><a href="/posts/1">View Post</a></li>
-    <li><a href="/register">Sign Up</a></li>
+  </ul>
+
+  <ul class="navBarRight">
     {{#if isLoggedIn}}
-      <li><a id="logout-button">Sign Out</a></li>
+      <li><a id="logout-button" href="">Sign Out</a></li>
     {{else}}
+      <li><a href="/register">Sign Up</a></li>
       <li><a href="/login">Sign In</a></li>
     {{/if}}
   </ul>

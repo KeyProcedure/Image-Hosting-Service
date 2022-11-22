@@ -10,12 +10,11 @@
   {{/each}}
 </head>
 <body>
+{{#if (nonEmptyObject messages)}}
+  {{> flashmessage}}
+{{/if}}
+
   {{> nav}}
-
-  {{#if (nonEmptyObject messages)}}
-    {{> flashmessage}}
-  {{/if}}
-
   {{{body}}}
   {{> footer}}
 </body>
