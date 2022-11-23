@@ -5,7 +5,7 @@ module.exports = {
     } else {
       req.flash("error", "You must be signed in to post");
       req.session.save(function(saveError) {
-        res.redirect('/register');
+        res.redirect('/login');
       })
     }
   }

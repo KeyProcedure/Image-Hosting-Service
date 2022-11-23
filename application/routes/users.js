@@ -35,7 +35,7 @@ router.post("/register", function (req, res, next) {
         throw new UserError('Sign Up Failed: account could not be made', "/register", 200);
       }
     })
-    .catch(function (err) {
+    .catch(function(err) {
       if (err instanceof UserError) {
         req.flash("error", err.getMessage());
         req.session.save(function(saveErr) {
