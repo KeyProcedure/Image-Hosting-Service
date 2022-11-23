@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated navbar appearance.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated protector redirect page to /login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/middleware/protectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/middleware/protectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.0",
     "javascript.nodejs.core.library.typings.version": "18.11.9",
-    "last_opened_file_path": "C:/Users/Zuby/WebstormProjects/csc317-code-KeyProcedure/application/views",
+    "last_opened_file_path": "C:/Users/Zuby/WebstormProjects/csc317-code-KeyProcedure/application",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.sourceCode.Other File Types",
     "vue.rearranger.settings.migration": "true"
@@ -57,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application" />
       <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application\views" />
     </key>
   </component>
@@ -91,7 +92,7 @@
       <workItem from="1667626538035" duration="304000" />
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
-      <workItem from="1668708515787" duration="44981000" />
+      <workItem from="1668708515787" duration="50688000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -380,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669159714288</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Updated protector redirect page to /login">
+      <created>1669187772640</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1669187772640</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added username validation" />
     <MESSAGE value="added password validation" />
     <MESSAGE value="completed registration validation" />
     <MESSAGE value="added requirement for email field" />
@@ -446,6 +453,7 @@
     <MESSAGE value="Completed basic use of flash messages." />
     <MESSAGE value="In process of reconfiguring nav bar" />
     <MESSAGE value="Updated navbar appearance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated navbar appearance." />
+    <MESSAGE value="Updated protector redirect page to /login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated protector redirect page to /login" />
   </component>
 </project>
