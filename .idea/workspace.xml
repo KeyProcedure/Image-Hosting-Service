@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated protector redirect page to /login">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated flash message.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/partials/flashmessage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/flashmessage.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1667626538035" duration="304000" />
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
-      <workItem from="1668708515787" duration="50688000" />
+      <workItem from="1668708515787" duration="57005000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -388,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669187772640</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updated flash message.">
+      <created>1669194449952</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1669194449952</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added password validation" />
     <MESSAGE value="completed registration validation" />
     <MESSAGE value="added requirement for email field" />
     <MESSAGE value="implemented image gallery and counter" />
@@ -454,6 +460,7 @@
     <MESSAGE value="In process of reconfiguring nav bar" />
     <MESSAGE value="Updated navbar appearance." />
     <MESSAGE value="Updated protector redirect page to /login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated protector redirect page to /login" />
+    <MESSAGE value="Updated flash message." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated flash message." />
   </component>
 </project>

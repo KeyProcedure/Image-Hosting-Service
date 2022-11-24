@@ -205,6 +205,8 @@ footer {
   margin: 5px;
   border: 2px solid;
   border-radius: 5px;
+  animation: fade 7s;
+  opacity: 0;
 }
 
 .alert-danger {
@@ -215,3 +217,9 @@ footer {
   color: green;
 }
 
+@keyframes fade {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
