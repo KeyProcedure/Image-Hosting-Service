@@ -205,7 +205,7 @@ footer {
   margin: 5px;
   border: 2px solid;
   border-radius: 5px;
-  animation: fade 7s;
+  animation: fade 6s;
   opacity: 0;
 }
 
@@ -219,7 +219,7 @@ footer {
 
 @keyframes fade {
   0% { opacity: 0; }
-  25% { opacity: 1; }
+  10% { opacity: 1; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
