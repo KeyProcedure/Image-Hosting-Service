@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Adjusted flash message fade settings.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated display of pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/partials/footer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/footer.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/postimage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/postimage.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/registration.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/viewpost.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/viewpost.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +95,7 @@
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
       <workItem from="1668708515787" duration="63769000" />
-      <workItem from="1669343240186" duration="2591000" />
+      <workItem from="1669343240186" duration="6129000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -417,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669279277865</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Updated display of pages">
+      <created>1669345918384</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1669345918384</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented image gallery and counter" />
     <MESSAGE value="Implemented fade out of image on click event. Working on tracking multiple interval IDs." />
     <MESSAGE value="Created attribute on cardDiv to store intervalID. Fixed removeEventListener." />
     <MESSAGE value="Updated double quotes to single quotes" />
@@ -483,6 +484,7 @@
     <MESSAGE value="Updated flash message." />
     <MESSAGE value="Added fade in and fade out to flash message." />
     <MESSAGE value="Adjusted flash message fade settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted flash message fade settings." />
+    <MESSAGE value="Updated display of pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated display of pages" />
   </component>
 </project>
