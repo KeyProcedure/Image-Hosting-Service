@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get("/login", function (req, res) {
-  res.render('login');
+  res.render('login', {js: ["login.js"]});
 });
 
 // Method: GET

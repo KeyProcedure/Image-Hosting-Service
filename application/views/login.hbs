@@ -17,19 +17,24 @@
                 method="POST"
                 enctype="application/x-www-form-urlencoded">
 
-            <label for="username">Username</label>
+            <label for="login-username">Username</label>
             <input type="text"
-                   id="username"
+                   id="login-username"
                    placeholder="Username"
-                   name="username"/>
+                   name="username"
+                   required/>
+            <p id="login-username-msg">Please enter your username</p>
 
-            <label for="password">Password</label>
+            <label for="login-password">Password</label>
             <input type="password"
-                   id="password"
+                   id="login-password"
                    placeholder="Password"
-                   name="password"/>
+                   name="password"
+                   required/>
+            <p id="login-password-msg">Please enter your password</p>
 
-            <input type="submit"
+            <input id="loginSubmit"
+                   type="submit"
                    value="Submit">
           </form>
         </main>

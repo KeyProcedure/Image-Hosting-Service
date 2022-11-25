@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Created border around input forms">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Enabled registration validation. Created link to sign in page from registration page.">
+      <change afterPath="$PROJECT_DIR$/application/public/js/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/registration.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
       <workItem from="1668708515787" duration="63769000" />
-      <workItem from="1669343240186" duration="7512000" />
+      <workItem from="1669343240186" duration="9619000" />
     </task>
     <task id="LOCAL-00001" summary="created html pages">
       <created>1663528897362</created>
@@ -427,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669349647448</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Enabled registration validation. Created link to sign in page from registration page.">
+      <created>1669351043794</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1669351043794</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created attribute on cardDiv to store intervalID. Fixed removeEventListener." />
     <MESSAGE value="Updated double quotes to single quotes" />
     <MESSAGE value="Remove temp id" />
     <MESSAGE value="updated double quotes to single quotes" />
@@ -493,6 +497,7 @@
     <MESSAGE value="Adjusted flash message fade settings." />
     <MESSAGE value="Updated display of pages" />
     <MESSAGE value="Created border around input forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created border around input forms" />
+    <MESSAGE value="Enabled registration validation. Created link to sign in page from registration page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled registration validation. Created link to sign in page from registration page." />
   </component>
 </project>
