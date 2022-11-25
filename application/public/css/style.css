@@ -1,9 +1,12 @@
 body {
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  min-height:  calc(100vh - 40px);
+  margin: 0;
+  padding-top: 40px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #FFF;
-  margin: 0;
-  min-height: 100vh;
 }
 
 ul {
@@ -72,11 +75,6 @@ a {
   }
 }
 
-
-
-
-
-
 h1 {
   text-align: center;
   letter-spacing: 2px;
@@ -95,8 +93,17 @@ h4 {
 }
 
 p {
-  font-size: 18px;
   text-align: center;
+  font-size: .7rem;
+  color: black;
+}
+
+.footer-tag {
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  color: black;
 }
 
 label {
@@ -159,15 +166,17 @@ img {
   margin-right: auto;
 }
 
-footer {
+.footer {
+  min-height: 50px;
   font-style: oblique;
 }
 
 .flex-wrapper {
   display: flex;
-  min-height: 84vh;
+  min-height: 80vh;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
 }
 
 .object-list {
@@ -219,7 +228,7 @@ footer {
 
 @keyframes fade {
   0% { opacity: 0; }
-  10% { opacity: 1; }
+  15% { opacity: 1; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }

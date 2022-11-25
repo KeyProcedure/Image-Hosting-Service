@@ -91,7 +91,7 @@ router.post("/login", function (req, res, next) {
 });
 
 router.post("/logout", function (req, res, next) {
-  req.session.destroy(function (destroyError) {
+  req.session.destroy(function(destroyError) {
     if (destroyError) {
       next(err);
     } else {
@@ -101,6 +101,6 @@ router.post("/logout", function (req, res, next) {
       });
     }
   })
-})
+});
 
 module.exports = router;
