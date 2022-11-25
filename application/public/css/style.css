@@ -94,7 +94,7 @@ h4 {
 
 p {
   text-align: center;
-  font-size: .7rem;
+  font-size: .75rem;
   color: black;
 }
 
@@ -238,4 +238,12 @@ img {
   border: 3px solid lightseagreen;
   padding: 0 40px 40px 40px;
   margin: 0 auto;
+}
+
+.gallery-box {
+  border: 3px solid lightseagreen;
+  padding: 0px 40px 40px 40px;
+  margin: 0 auto;
+  min-height: 75vh;
+  min-width: 75vw;
 }

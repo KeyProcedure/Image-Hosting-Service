@@ -11,11 +11,10 @@ router.get("/login", function (req, res) {
   res.render('login');
 });
 
-// REGISTRATION VALIDATION IS DISABLED, REMOVE COMMENT TO ENABLE---------------------------------------------------------------
 // Method: GET
 // localhost:3000/register
 router.get("/register", function (req, res) {
-  res.render('registration', {/*js: ["registration.js"]*/});
+  res.render('registration', {js: ["registration.js"]});
 });
 
 router.get("/postimage", isLoggedIn, function (req, res) {
