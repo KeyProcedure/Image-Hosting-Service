@@ -247,3 +247,9 @@ img {
   min-height: 75vh;
   min-width: 75vw;
 }
+.redirect-message {
+  font-size: 1rem;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
