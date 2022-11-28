@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Added input validation for login page.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated registration redirect text.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/registration.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,14 +93,7 @@
       <workItem from="1667689303797" duration="10369000" />
       <workItem from="1668542145277" duration="4957000" />
       <workItem from="1668708515787" duration="63769000" />
-      <workItem from="1669343240186" duration="12626000" />
-    </task>
-    <task id="LOCAL-00001" summary="created html pages">
-      <created>1663528897362</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663528897362</updated>
+      <workItem from="1669343240186" duration="14229000" />
     </task>
     <task id="LOCAL-00002" summary="completed registration page">
       <created>1663610069738</created>
@@ -438,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669353036438</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Updated registration redirect text.">
+      <created>1669522866618</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1669522866618</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove temp id" />
     <MESSAGE value="updated double quotes to single quotes" />
     <MESSAGE value="Updated flexbox setting for images" />
     <MESSAGE value="removed onsubmit trigger" />
@@ -504,6 +503,7 @@
     <MESSAGE value="Created border around input forms" />
     <MESSAGE value="Enabled registration validation. Created link to sign in page from registration page." />
     <MESSAGE value="Added input validation for login page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added input validation for login page." />
+    <MESSAGE value="Updated registration redirect text." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated registration redirect text." />
   </component>
 </project>
