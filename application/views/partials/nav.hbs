@@ -2,7 +2,7 @@
 
 <header class="header">
   <ul class="navBarLeft">
-    <li><a href="/">Home</a></li>
+    <li><a class="home-link" href="/">Home</a></li>
     <li><a href="/postimage">New Post</a></li>
   </ul>
 
@@ -12,10 +12,10 @@
 
   <ul class="navBarRight">
     {{#if isLoggedIn}}
-      <li><a id="logout-button" href="">Sign Out</a></li>
+      <li><a class="sign-out-link" id="logout-button" href="">Sign Out</a></li>
     {{else}}
       <li><a href="/register">Sign Up</a></li>
-      <li><a href="/login">Sign In</a></li>
+      <li><a class="sign-in-link" href="/login">Sign In</a></li>
     {{/if}}
   </ul>
 </header>

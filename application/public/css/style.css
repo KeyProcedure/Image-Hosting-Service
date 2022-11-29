@@ -18,6 +18,7 @@ ul {
 a {
   text-decoration: none;
   color: #2b8ffc;
+  border-radius: 4px;
 }
 
 .navBarLeft a, .navBarCenter a, .navBarRight a {
@@ -32,14 +33,26 @@ a {
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+.home-link {
+  margin-right: .25rem;
+}
+
+.sign-in-link {
+  margin-left: .25rem;
+  background-color: #bbffd3;
+}
+
+.sign-out-link {
+  background-color: rgba(255,141,167,0.62);
+}
+
 .navBarLeft a:hover, .navBarCenter a:hover, .navBarRight a:hover {
   box-shadow: inset 110px 0 0 0 dodgerblue;
   color: white;
 }
 
 .header {
-  padding-top: .25em;
-  padding-bottom: .25em;
+  padding: .25rem;
   border: 1px solid #a2a2a2;
   border-radius: 4px;
   background-color: #FFF;
@@ -253,3 +266,4 @@ img {
   padding-top: 20px;
   padding-bottom: 0px;
 }
+

@@ -93,7 +93,7 @@ router.post("/login", function (req, res, next) {
 router.post("/logout", function (req, res, next) {
   req.session.destroy(function(destroyError) {
     if (destroyError) {
-      next(err);
+      next(destroyError);
     } else {
       res.json({
         status: 200,
