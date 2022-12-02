@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
 
-  <body>
-    <div class="flex-wrapper">
-      <div class="gallery-box">
-        <main>
-          <h2>Gallery</h2>
-          <div id="object-list"
-               class="object-list"></div>
-        </main>
+<body>
+<div class="flex-wrapper">
+  <div class="gallery-box">
+    <main>
+      <h2>Gallery</h2>
+      <div id="object-list"
+           class="object-list">
+        {{#each results}}
+          <div>
+            <img src="{{this.thumbnail}}" alt="">
+            <p>{{this.title}}</p>
+            <p>{{this.description}}</p>
+            <a href="/posts/{{this.id}}"></a>
+          </div>
+        {{/each}}
       </div>
-    </div>
-  </body>
+    </main>
+  </div>
+</div>
+</body>
 </html>

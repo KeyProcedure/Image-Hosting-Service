@@ -10,11 +10,11 @@ function fetchProducts() {
       let containerFragment = document.createDocumentFragment();
 
       data.forEach(function (object) {
-        //buildCardsUsingDOMAPI(containerFragment, object);
+        buildCardsUsingDOMAPI(containerFragment, object);
       });
 
       container.appendChild(containerFragment);
-      // document.querySelector('.counter').innerHTML = "" + container.childElementCount;
+        document.querySelector('.counter').innerHTML = "" + container.childElementCount;
     });
 }
 

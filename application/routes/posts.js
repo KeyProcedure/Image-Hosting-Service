@@ -24,7 +24,7 @@ router.post("/create", upload.single("uploadImage"), function(req, res, next) {
   const userId = req.session.userId;
 
   sharp(uploadedFile)
-    .resize(200)
+    .resize(400)
     .toFile(destinationOfThumbnail)
     .then(function() {
       let baseSQL = `
