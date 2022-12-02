@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Post Image</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Post Image</title>
+</head>
 
-  <body>
-    <div class="flex-wrapper">
-      <div class="form-box">
-        <main>
-          <h2>Post images to your account</h2>
+<body>
+<div class="flex-wrapper">
+  <div class="form-box">
+    <main>
+      <h2>Post images to your account</h2>
 
-          <form>
-            <label for="postTitle">Post Title</label>
-            <input type="text"
-                   id="postTitle"
-                   placeholder="Post Title"/>
+      <form id="post-image" class="input-form"
+        action="/posts/create"
+        method="post"
+        enctype="multipart/form-data">
+        <label for="post-title">Post Title</label>
+        <input type="text"
+               id="post-title"
+               placeholder="Post Title"
+               name="title"
+               required/>
 
-            <label for="postDescription">Post Description</label>
-            <input type="text"
-                   id="postDescription"
-                   placeholder="Post Description"/>
+        <label for="post-desc">Post Description</label>
+        <input type="text"
+               id="post-desc"
+               placeholder="Post Description"
+               name="description"
+               required/>
 
-            <input type="file"
-                   id="myFile"
-                   name="filename"
-                   placeholder="Nothing">
+        <label class="post-lbl-image">Upload Image</label>
+        <input id="img-select"
+               class="post-input-image"
+               type="file"
+               name="uploadImage"
+               placeholder="No file chosen"
+               required/>
 
-            <a href="">Acceptable Use Policy</a>
+        <a href="">Acceptable Use Policy</a>
+        <label for="TOSCheck">I accept the Acceptable Use Policy</label>
+        <input type="checkbox"
+               id="TOSCheck"
+               required/>
 
-            <label for="TOSCheck">I accept the Acceptable Use Policy</label>
-            <input type="checkbox"
-                   id="TOSCheck"/>
-
-            <input type="submit"
-                   value="Submit Image">
-            </form>
-        </main>
-      </div>
-    </div>
-  </body>
+        <input type="submit"
+               value="Submit Image">
+      </form>
+    </main>
+  </div>
+</div>
+</body>
 </html>
