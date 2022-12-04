@@ -53,12 +53,20 @@ router.get("/search", function(req, res, next) {
     HAVING haystack like ?;`;
   db.execute(baseSQL, [searchTerm])
     .then(function([results, fields]) {
-      res.locals.results = results;
-      res.locals.searchTerm = originalSearchTerm;
-      req.flash("success", `${results.length} results found`);
-      req.session.save(function(saveErr) {
-        res.render(`index`);
-      })
+      if (originalSearchTerm === "" || originalSearchTerm === " " || results.length < 1) {
+        req.flash("error", `0 results found`);
+        req.session.save(function(saveErr) {
+          res.redirect(`/`);
+        })
+      }
+      else {
+        res.locals.results = results;
+        res.locals.searchTerm = originalSearchTerm;
+        req.flash("success", `${results.length} results found`);
+        req.session.save(function(saveErr) {
+          res.render(`index`);
+        })
+      }
   })
 });
 

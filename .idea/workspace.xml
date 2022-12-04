@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated home page.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated view post page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/viewpost.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/viewpost.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +101,7 @@
       <workItem from="1669343240186" duration="15642000" />
       <workItem from="1669685525264" duration="4564000" />
       <workItem from="1669754359067" duration="5672000" />
-      <workItem from="1669918774046" duration="32866000" />
-    </task>
-    <task id="LOCAL-00010" summary="updated html pages and added style css file">
-      <created>1664662332380</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1664662332380</updated>
+      <workItem from="1669918774046" duration="33465000" />
     </task>
     <task id="LOCAL-00011" summary="updated html pages and css content">
       <created>1664677840998</created>
@@ -447,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670186297283</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Updated view post page.">
+      <created>1670188365194</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1670188365194</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added SQL tables code into dbloader.js" />
     <MESSAGE value="Implemented server side registration and login communication" />
     <MESSAGE value="Began implementation of sessions" />
     <MESSAGE value="Completed implementation of sessions. Reformatted code." />
@@ -513,6 +511,7 @@
     <MESSAGE value="Implemented search and view post features." />
     <MESSAGE value="Updated navbar." />
     <MESSAGE value="Updated home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated home page." />
+    <MESSAGE value="Updated view post page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated view post page." />
   </component>
 </project>
