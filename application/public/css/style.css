@@ -205,35 +205,81 @@ img {
 
 .flex-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 80vh;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
 }
 
-.object-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  padding: 10px;
+.gallery-box {
+  flex-shrink: 1;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#object-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .object-card {
-  flex: 0;
-  flex-basis: 26%;
-  border: 3px inset #2b8ffc;
+  flex: 0 0 28%;
+  padding: 20px;
+  text-align: center;
+}
+
+.object-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-title {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-description {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.image-link {
+  display: inline-block;
   padding: 10px;
+  color: white;
+  background-color: #00b09b;
+  text-decoration: none;
+  border-radius: 5px;
+
 }
 
-.object-image {
-  height: 32rem;
-  max-width: 100%;
-  object-fit: contain;
-}
 
-.object-title {
-  margin: 2px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .alert-success, .alert-danger {
   position: fixed;
@@ -272,14 +318,6 @@ img {
   margin: 0 auto;
   min-height: 100px;
   min-width: 100px;
-}
-
-.gallery-box {
-  border: 3px solid lightseagreen;
-  padding: 30px 30px 30px 30px;
-  margin: 0 auto;
-  min-height: 75vh;
-  min-width: 75vw;
 }
 
 .redirect-message {
