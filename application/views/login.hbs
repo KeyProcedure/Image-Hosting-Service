@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sign In</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+</head>
 
-  <body>
-    <div class="flex-wrapper">
-      <div class="form-box">
-        <main>
-          <h2>Sign in to continue</h2>
+<body>
+<div class="flex-wrapper">
+  <div class="form-box">
+    <main>
+      <h2>Sign in to continue</h2>
 
-          <form name="login"
-                action="/users/login"
-                method="POST"
-                enctype="application/x-www-form-urlencoded">
+      <form name="login"
+            action="/users/login"
+            method="POST"
+            enctype="application/x-www-form-urlencoded">
 
-            <label for="login-username">Username</label>
-            <input type="text"
-                   id="login-username"
-                   placeholder="Username"
-                   name="username"
-                   required/>
-            <p id="login-username-msg">Please enter your username</p>
+        <label for="login-username">Username</label>
+        <input type="text"
+               id="login-username"
+               placeholder="Username"
+               name="username"
+               required/>
+        <p id="login-username-msg">Please enter your username</p>
 
-            <label for="login-password">Password</label>
-            <input type="password"
-                   id="login-password"
-                   placeholder="Password"
-                   name="password"
-                   required/>
-            <p id="login-password-msg">Please enter your password</p>
+        <label for="login-password">Password</label>
+        <input type="password"
+               id="login-password"
+               placeholder="Password"
+               name="password"
+               required/>
+        <p id="login-password-msg">Please enter your password</p>
 
-            <input id="loginSubmit"
-                   type="submit"
-                   value="Submit">
-          </form>
-        </main>
-      </div>
-    </div>
-  </body>
+        <input
+            class="form-submit"
+            id="loginSubmit"
+            type="submit"
+            value="Submit">
+      </form>
+    </main>
+  </div>
+</div>
+</body>
 </html>

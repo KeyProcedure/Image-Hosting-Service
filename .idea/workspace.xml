@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Completed new post and home page gallery feature.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Implemented search and view post features.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/middleware/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/middleware/posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/partials/nav.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/partials/nav.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/viewpost.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/viewpost.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/postimage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/postimage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/registration.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.9&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zuby/WebstormProjects/csc317-code-KeyProcedure/application&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Other File Types&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.12.0",
+    "javascript.nodejs.core.library.typings.version": "18.11.9",
+    "last_opened_file_path": "C:/Users/Zuby/WebstormProjects/csc317-code-KeyProcedure/application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Other File Types",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application" />
@@ -109,14 +105,7 @@
       <workItem from="1669343240186" duration="15642000" />
       <workItem from="1669685525264" duration="4564000" />
       <workItem from="1669754359067" duration="5672000" />
-      <workItem from="1669918774046" duration="25036000" />
-    </task>
-    <task id="LOCAL-00006" summary="corrected indentation">
-      <created>1663639318050</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663639318050</updated>
+      <workItem from="1669918774046" duration="26994000" />
     </task>
     <task id="LOCAL-00007" summary="placed code in proper sections">
       <created>1663640279894</created>
@@ -454,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670024853620</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Implemented search and view post features.">
+      <created>1670179558626</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1670179558626</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Simplified fade method. Changed layout to grid." />
     <MESSAGE value="Installed dependencies. Updated my name on the index page." />
     <MESSAGE value="Implemented handlebars and organized files." />
     <MESSAGE value="Added SQL tables code into dbloader.js" />
@@ -520,6 +515,7 @@
     <MESSAGE value="Updated colors of sign-in and sign-out buttons" />
     <MESSAGE value="In process of enabling images to be uploaded and viewed on the home page." />
     <MESSAGE value="Completed new post and home page gallery feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed new post and home page gallery feature." />
+    <MESSAGE value="Implemented search and view post features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented search and view post features." />
   </component>
 </project>

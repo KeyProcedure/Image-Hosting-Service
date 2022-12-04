@@ -4,7 +4,6 @@ body {
   min-height:  calc(100vh - 40px);
   margin: 0;
   padding-top: 40px;
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #FFF;
 }
@@ -19,6 +18,11 @@ a {
   text-decoration: none;
   color: #2b8ffc;
   border-radius: 4px;
+}
+
+.navBarLeft a:hover, .navBarCenter a:hover, .navBarRight a:hover {
+  box-shadow: inset 300px 0 0 0 dodgerblue;
+  color: white;
 }
 
 .navBarLeft a, .navBarCenter a, .navBarRight a {
@@ -44,11 +48,6 @@ a {
 
 .sign-out-link {
   background-color: rgba(255,141,167,0.62);
-}
-
-.navBarLeft a:hover, .navBarCenter a:hover, .navBarRight a:hover {
-  box-shadow: inset 110px 0 0 0 dodgerblue;
-  color: white;
 }
 
 .header {
@@ -79,6 +78,11 @@ a {
 }
 
 @media (min-width: 1025px) {
+  .navBarLeft a:hover, .navBarCenter a:hover, .navBarRight a:hover {
+    box-shadow: inset 110px 0 0 0 dodgerblue;
+    color: white;
+  }
+
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -149,18 +153,23 @@ input:focus {
   border: 2px solid slateblue;
 }
 
-input[type=submit] {
+.search-submit {
+  text-align: center;
+  background-color: white;
+}
+
+.form-submit {
   text-align: center;
   margin-top: 15px;
   background-color: white;
 }
 
-input[type=submit]:hover {
+.search-submit:hover, .form-submit:hover {
   transition: .0001s;
   background-color: #c7d9ff;
 }
 
-input[type=submit]:focus {
+.search-submit, .form-submit:focus {
   transition: .0001s;
 }
 
@@ -277,19 +286,5 @@ img {
   font-size: 1rem;
   font-style: italic;
   padding-top: 20px;
-  padding-bottom: 0px;
-}
-
-.post-lbl-image {
-  padding-top: 25px;
-  padding-bottom: 0px;
-}
-
-.search-text {
-  margin-top: 9px;
-}
-
-.search-button {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-bottom: 0;
 }
