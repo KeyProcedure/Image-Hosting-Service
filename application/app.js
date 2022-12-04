@@ -25,7 +25,14 @@ app.engine(
     helpers: {
       nonEmptyObject: function(obj) {
         return (obj && obj.constructor === Object && Object.keys(obj).length > 0);
+      },
+      formatDate: function(dateString) {
+        return new Date(dateString).toLocaleString("en-US", {
+          timeStyle: "long",
+          dateStyle: "long"
+        });
       }
+
     }, //adding new helpers to handlebars for extra functionality
   })
 );

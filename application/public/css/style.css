@@ -60,6 +60,11 @@ a {
   margin: 0 auto 40px auto;
 }
 
+.search-form {
+  display: flex;
+  width: 100%;
+}
+
 @media (min-width: 700px) {
   .header, .navBarLeft, .navBarCenter, .navBarRight {
     display: flex;
@@ -85,6 +90,10 @@ a {
 
   .navBarRight {
     justify-content: right;
+  }
+
+  .search-text {
+    width: 25rem;
   }
 }
 
@@ -203,7 +212,8 @@ img {
 .object-card {
   flex: 0;
   flex-basis: 26%;
-  border: 6px inset #2b8ffc;
+  border: 3px inset #2b8ffc;
+  padding: 10px;
 }
 
 .object-image {
@@ -251,11 +261,13 @@ img {
   border: 3px solid lightseagreen;
   padding: 0 40px 40px 40px;
   margin: 0 auto;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 .gallery-box {
   border: 3px solid lightseagreen;
-  padding: 0px 40px 40px 40px;
+  padding: 30px 30px 30px 30px;
   margin: 0 auto;
   min-height: 75vh;
   min-width: 75vw;
@@ -271,4 +283,13 @@ img {
 .post-lbl-image {
   padding-top: 25px;
   padding-bottom: 0px;
+}
+
+.search-text {
+  margin-top: 9px;
+}
+
+.search-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

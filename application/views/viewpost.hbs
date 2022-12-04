@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>View Post</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>View Post</title>
+</head>
 
-  <body>
-    <div class="flex-wrapper">
-      <div class="form-box">
-        <main>
-          <h2>View an individual image post</h2>
-
-          <form>
-            <label for="postTitle">Post Title</label>
-            <input type="text"
-                   id="postTitle"
-                   placeholder="Post Title"/>
-
-            <label for="postAuthor">Post Author</label>
-            <input type="text"
-                   id="postAuthor"
-                   placeholder="Post Author"/>
-
-            <label for="creationTime">Creation Time</label>
-            <input type="text"
-                   id="creationTime"
-                   placeholder="Creation Time"/>
-
-            <input type="submit"
-                   value="View Image">
-          </form>
-
-          <h3>Image Post Result:</h3>
-          <img id="viewPostImg" src="https://fakeimg.pl/300/" alt="">
-        </main>
+<body>
+<div class="flex-wrapper">
+  <div class="form-box">
+    <h2 class="post-title">{{currentPost.title}}</h2>
+    <p class="post-description">{{currentPost.description}}</p>
+    <div class="post-author-date">
+      <p class="author"> Created By {{currentPost.username}}</p>
+      <p class="date-posted">{{formatDate currentPost.createdAt}}</p>
+    </div>
+    <img class="img-container" src="/{{currentPost.image}}"/>
+    <div class="comment-section">
+      <div class="comment-box">
+        <textarea id="comment-text" class="comment-box-text"></textarea>
+        <i id="comment-button" class="comment-box-button" aria-hidden="true"></i>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>
