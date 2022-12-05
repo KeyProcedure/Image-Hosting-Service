@@ -233,6 +233,7 @@ img {
   flex: 0 0 28%;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 .object-card img {
@@ -261,6 +262,7 @@ img {
   background-color: #00b09b;
   text-decoration: none;
   border-radius: 5px;
+  position: relative;
 }
 
 .alert-success, .alert-danger {
@@ -308,7 +310,6 @@ img {
   padding-top: 20px;
   padding-bottom: 0;
 }
-
 
 .post-title {
   font-size: 18px;

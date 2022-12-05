@@ -1,14 +1,14 @@
 const submitButton = document.getElementById('loginSubmit');
 submitButton.addEventListener('click', validateLogin);
 
-const passwordInputField = document.getElementById('login-username');
-passwordInputField.addEventListener('keydown', function () {
-  passwordInputField.setCustomValidity('')
+const loginInputField = document.getElementById('login-username');
+loginInputField.addEventListener('keydown', function () {
+  loginInputField.setCustomValidity('')
 });
 
-const confirmPasswordInputField = document.getElementById('login-password');
-confirmPasswordInputField.addEventListener('keydown', function () {
-  confirmPasswordInputField.setCustomValidity('')
+const passwordInputField = document.getElementById('login-password');
+passwordInputField.addEventListener('keydown', function () {
+  passwordInputField.setCustomValidity('')
 });
 
 function validateLogin() {
@@ -17,7 +17,7 @@ function validateLogin() {
 }
 
 function validateUsername() {
-  let username = document.getElementById('login-username').value;
+  let username = loginInputField.value;
 
   if (username.length < 1) {
     document.getElementById('login-username-msg').style.color = 'red';
@@ -31,7 +31,7 @@ function validateUsername() {
 }
 
 function validatePassword() {
-  let password = document.getElementById('login-password').value;
+  let password = passwordInputField.value;
 
   if (password.length < 1) {
     document.getElementById('login-password-msg').style.color = 'red';

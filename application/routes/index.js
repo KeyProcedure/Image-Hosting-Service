@@ -12,14 +12,12 @@ router.get("/login", function (req, res) {
   res.render('login', {js: ["login.js"]});
 });
 
-// Method: GET
-// localhost:3000/register
 router.get("/register", function (req, res) {
   res.render('registration', {js: ["registration.js"]});
 });
 
 router.get("/postimage", isLoggedIn, function (req, res) {
-  res.render('postimage');
+  res.render('postimage', {js: ["postimage.js"]});
 });
 
 router.get("/posts/:id(\\d+)", getPostById, function (req, res) {
