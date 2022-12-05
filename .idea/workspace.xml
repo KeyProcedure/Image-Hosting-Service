@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated view post page.">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Implemented check and redirect for no search results.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,14 +102,7 @@
       <workItem from="1669343240186" duration="15642000" />
       <workItem from="1669685525264" duration="4564000" />
       <workItem from="1669754359067" duration="5672000" />
-      <workItem from="1669918774046" duration="33465000" />
-    </task>
-    <task id="LOCAL-00011" summary="updated html pages and css content">
-      <created>1664677840998</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1664677840998</updated>
+      <workItem from="1669918774046" duration="37954000" />
     </task>
     <task id="LOCAL-00012" summary="updated html pages and css content">
       <created>1664723332791</created>
@@ -446,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670188365194</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Implemented check and redirect for no search results.">
+      <created>1670188712253</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1670188712253</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented server side registration and login communication" />
     <MESSAGE value="Began implementation of sessions" />
     <MESSAGE value="Completed implementation of sessions. Reformatted code." />
     <MESSAGE value="Updated README with link information." />
@@ -512,6 +512,7 @@
     <MESSAGE value="Updated navbar." />
     <MESSAGE value="Updated home page." />
     <MESSAGE value="Updated view post page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated view post page." />
+    <MESSAGE value="Implemented check and redirect for no search results." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented check and redirect for no search results." />
   </component>
 </project>

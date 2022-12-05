@@ -218,7 +218,7 @@ img {
   max-width: 1000px;
   padding: 30px;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
   border-radius: 5px;
 }
 
@@ -237,7 +237,7 @@ img {
 
 .object-card img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -261,7 +261,6 @@ img {
   background-color: #00b09b;
   text-decoration: none;
   border-radius: 5px;
-
 }
 
 .alert-success, .alert-danger {
@@ -319,7 +318,7 @@ img {
 
 .post-description {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .author {
@@ -333,8 +332,7 @@ img {
 }
 
 .img-container {
-  width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   height: auto;
   margin: auto;
   border: 1px solid #ddd;
