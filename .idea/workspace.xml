@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated post.js to resize images smaller than 300x300 to the minimum of their height and width">
-      <change afterPath="$PROJECT_DIR$/application/public/js/postimage.js" afterDir="false" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Implemented form validation for uploading a new post.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/public/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/postimage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/postimage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/middleware/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/middleware/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,14 +101,7 @@
       <workItem from="1669343240186" duration="15642000" />
       <workItem from="1669685525264" duration="4564000" />
       <workItem from="1669754359067" duration="5672000" />
-      <workItem from="1669918774046" duration="41908000" />
-    </task>
-    <task id="LOCAL-00013" summary="updated input form colors and borders">
-      <created>1664827456456</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1664827456456</updated>
+      <workItem from="1669918774046" duration="44220000" />
     </task>
     <task id="LOCAL-00014" summary="updated input form colors and borders">
       <created>1665683671745</created>
@@ -450,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670267531617</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Implemented form validation for uploading a new post.">
+      <created>1670271552700</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1670271552700</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Completed implementation of sessions. Reformatted code." />
     <MESSAGE value="Updated README with link information." />
     <MESSAGE value="In progress of implementing flash messages." />
     <MESSAGE value="Completed basic use of flash messages." />
@@ -516,6 +511,7 @@
     <MESSAGE value="Updated view post page." />
     <MESSAGE value="Implemented check and redirect for no search results." />
     <MESSAGE value="Updated post.js to resize images smaller than 300x300 to the minimum of their height and width" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated post.js to resize images smaller than 300x300 to the minimum of their height and width" />
+    <MESSAGE value="Implemented form validation for uploading a new post." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented form validation for uploading a new post." />
   </component>
 </project>

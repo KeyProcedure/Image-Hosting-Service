@@ -24,6 +24,18 @@ module.exports = {
         if (results && results.length == 1) {
           res.locals.currentPost = results[0];
         }
+
+
+
+        else {
+          req.flash("error", "Post does not exist");
+          req.session.save(function(saveErr) {
+            res.redirect('/');
+          })
+        }
+
+
+
         next();
     })
   },
