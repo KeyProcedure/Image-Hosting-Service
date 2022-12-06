@@ -91,6 +91,7 @@ router.post("/login", function (req, res, next) {
 });
 
 router.post("/logout", function (req, res, next) {
+  req.flash([]);
   req.session.destroy(function(destroyError) {
     if (destroyError) {
       next(destroyError);
