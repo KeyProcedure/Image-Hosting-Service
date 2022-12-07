@@ -1,4 +1,5 @@
 const db = require('../conf/database');
+
 module.exports = {
   getRecentPosts: function(req, res, next) {
     db.query('select id, title, description, thumbnail from posts ORDER BY createdAt DESC LIMIT 20')
@@ -14,7 +15,7 @@ module.exports = {
   getPostById: function(req, res, next) {
     let postId = req.params.id;
     let baseSQL = `
-      SELECT p.title, p.description, p.image, p.createdAt, u.username
+      SELECT p.id, p.title, p.description, p.image, p.createdAt, u.username
       FROM posts p
       JOIN users u
       ON p.fk_authorId=u.id
@@ -32,4 +33,19 @@ module.exports = {
         }
     })
   },
+
+  getCommentsForPostById: function(req, res, next) {
+    let postId = req.params.id;
+    let baseSQl = `select c.id, c.text, c.createdAt, u.username
+      FROM comments c
+      JOIN users u
+      ON c.fk_authorId=u.id
+      WHERE fk_postId=?;`;
+    db.execute(baseSQl, [postId])
+      .then(function([results, fields]) {
+        res.locals.currentPost.comments = results;
+        next();
+      })
+      .catch(err => next(err))
+  }
 };

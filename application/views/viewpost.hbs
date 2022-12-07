@@ -15,12 +15,19 @@
       <p class="date-posted">{{formatDate currentPost.createdAt}}</p>
     </div>
     <img class="img-container" src="/{{currentPost.image}}"/>
+
     <div class="comment-section">
       <div class="comment-box">
         <textarea id="comment-text" class="comment-box-text"></textarea>
-        <i id="comment-button" class="comment-box-button" aria-hidden="true"></i>
+        <i id="comment-button" data-postid="{{currentPost.id}}" class="comment-box-button" aria-hidden="true"></i>
+      </div>
+      <div class="comments">
+        {{#each currentPost.comments}}
+          <p class="comment">{{this.text}}</p>
+        {{/each}}
       </div>
     </div>
+
   </div>
 </div>
 </body>
