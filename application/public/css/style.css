@@ -154,8 +154,11 @@ input:focus {
 }
 
 .search-submit {
-  text-align: center;
-  background-color: white;
+  cursor: pointer;
+  min-width: 55px;
+  background-size: 75%;
+  background-image: url('../images/frontend/search-image.jpg');
+  background-position: center;
 }
 
 .form-submit {
@@ -347,6 +350,7 @@ img {
 
 .comment-box {
   display: flex;
+  justify-content: center;
 }
 
 .comment-box-text {
@@ -357,6 +361,10 @@ img {
 }
 
 .comment-box-button {
-  padding: 10px;
   cursor: pointer;
+  width: 50px;
+  min-height: 100%;
+  background-size: 100%;
+  background-image: url('../images/frontend/comment-image.png');
+  background-position: center;
 }
