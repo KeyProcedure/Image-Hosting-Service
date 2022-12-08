@@ -21,4 +21,5 @@ npm install
 
 ## Run Instructions
 npm run builddb
+npm start
 localhost:3000
