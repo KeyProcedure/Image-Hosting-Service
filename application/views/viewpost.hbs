@@ -14,7 +14,7 @@
       <p class="author"> Created By {{currentPost.username}}</p>
       <p class="date-posted">{{formatDate currentPost.createdAt}}</p>
     </div>
-    <img class="img-container" src="/{{currentPost.image}}"/>
+    <img class="img-container" src="/{{currentPost.image}}" onerror="this.src='https://via.placeholder.com/300?text=Image+Not+Found';"/>
 
     <div class="comment-section">
       <div class="comment-box">

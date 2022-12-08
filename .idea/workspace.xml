@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Changed comment button image scale">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated post limit on home page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/middleware/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/middleware/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/viewpost.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/viewpost.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +107,7 @@
       <workItem from="1669918774046" duration="49860000" />
       <workItem from="1670442704955" duration="49000" />
       <workItem from="1670442858544" duration="19239000" />
-      <workItem from="1670467629735" duration="8075000" />
-    </task>
-    <task id="LOCAL-00023" summary="Updated double quotes to single quotes">
-      <created>1666139829375</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1666139829375</updated>
+      <workItem from="1670467629735" duration="9604000" />
     </task>
     <task id="LOCAL-00024" summary="Remove temp id">
       <created>1666139857160</created>
@@ -452,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670475117281</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Updated post limit on home page.">
+      <created>1670531528990</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531528990</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated display of pages" />
     <MESSAGE value="Created border around input forms" />
     <MESSAGE value="Enabled registration validation. Created link to sign in page from registration page." />
     <MESSAGE value="Added input validation for login page." />
@@ -518,6 +517,7 @@
     <MESSAGE value="Sorted comments by date in descending order" />
     <MESSAGE value="Reformatted code." />
     <MESSAGE value="Changed comment button image scale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed comment button image scale" />
+    <MESSAGE value="Updated post limit on home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated post limit on home page." />
   </component>
 </project>
