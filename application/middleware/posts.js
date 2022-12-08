@@ -40,7 +40,8 @@ module.exports = {
       FROM comments c
       JOIN users u
       ON c.fk_authorId=u.id
-      WHERE fk_postId=?;`;
+      WHERE fk_postId=?
+      ORDER BY c.createdAt DESC;`;
     db.execute(baseSQl, [postId])
       .then(function([results, fields]) {
         res.locals.currentPost.comments = results;

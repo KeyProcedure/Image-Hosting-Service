@@ -19,7 +19,6 @@ document.getElementById('comment-button')
     let commentTextElement = document.getElementById('comment-text');
     let commentText = commentTextElement.value;
     let postId = ev.currentTarget.dataset.postid;
-    let commentId = ev.currentTarget.dataset.id;
 
     if (!commentText)
       return
@@ -38,7 +37,7 @@ document.getElementById('comment-button')
       .then(res_json => {
         // addNewComment(res_json.data);
         location.reload();
-        document.getElementById(commentId).scrollIntoView();
+        // document.getElementById("footer-id").scrollIntoView();
       })
       .catch(err => console.log(err));
 })

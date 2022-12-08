@@ -23,7 +23,7 @@
       </div>
       <div class="comments">
         {{#each currentPost.comments}}
-          <div class="comment">
+          <div class="comment, id="{{this.id}}">
             <p class="username">{{this.username}}</p>
             <p class="date">{{formatDate this.createdAt}}</p>
             <p class="text">{{this.text}}</p>
