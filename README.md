@@ -20,6 +20,6 @@ This repository stores all the code for my web application.
 npm install
 
 ## Run Instructions
-npm run builddb
-npm start
+npm run builddb  
+npm start  
 localhost:3000

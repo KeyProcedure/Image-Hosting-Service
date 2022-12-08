@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Add link to placeholder in case uploaded image cannot be found.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated run instructions">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +107,7 @@
       <workItem from="1669918774046" duration="49860000" />
       <workItem from="1670442704955" duration="49000" />
       <workItem from="1670442858544" duration="19239000" />
-      <workItem from="1670467629735" duration="10324000" />
-    </task>
-    <task id="LOCAL-00025" summary="updated double quotes to single quotes">
-      <created>1666139913828</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1666139913828</updated>
+      <workItem from="1670467629735" duration="10652000" />
     </task>
     <task id="LOCAL-00026" summary="Updated flexbox setting for images">
       <created>1666139946060</created>
@@ -452,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670539258198</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Updated run instructions">
+      <created>1670539891207</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1670539891207</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enabled registration validation. Created link to sign in page from registration page." />
     <MESSAGE value="Added input validation for login page." />
     <MESSAGE value="Updated registration redirect text." />
     <MESSAGE value="Updated login page warning messages." />
@@ -518,6 +517,7 @@
     <MESSAGE value="Changed comment button image scale" />
     <MESSAGE value="Updated post limit on home page." />
     <MESSAGE value="Add link to placeholder in case uploaded image cannot be found." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add link to placeholder in case uploaded image cannot be found." />
+    <MESSAGE value="Updated run instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated run instructions" />
   </component>
 </project>
