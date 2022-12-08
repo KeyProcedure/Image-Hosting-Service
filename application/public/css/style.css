@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height:  calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
   margin: 0;
   padding-top: 40px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -47,7 +47,7 @@ a {
 }
 
 .sign-out-link {
-  background-color: rgba(255,141,167,0.62);
+  background-color: rgba(255, 141, 167, 0.62);
 }
 
 .header {
@@ -293,10 +293,18 @@ img {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  15% { opacity: 1; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .form-box {

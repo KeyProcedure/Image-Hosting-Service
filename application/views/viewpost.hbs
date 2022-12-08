@@ -21,18 +21,18 @@
         <textarea id="comment-text" class="comment-box-text" placeholder="Enter your comment here"></textarea>
         <i id="comment-button" data-postid="{{currentPost.id}}" class="comment-box-button" aria-hidden="true"></i>
       </div>
-      <div class="comments">
-        {{#each currentPost.comments}}
-          <div class="comment, id="{{this.id}}">
-            <p class="username">{{this.username}}</p>
-            <p class="date">{{formatDate this.createdAt}}</p>
-            <p class="text">{{this.text}}</p>
-          </div>
-        {{/each}}
+    <div class="comments">
+      {{#each currentPost.comments}}
+        <div class="comment, id="{{this.id}}">
+        <p class="username">{{this.username}}</p>
+        <p class="date">{{formatDate this.createdAt}}</p>
+        <p class="text">{{this.text}}</p>
       </div>
+      {{/each}}
     </div>
-
   </div>
+
+</div>
 </div>
 </body>
 </html>

@@ -14,7 +14,7 @@ function fetchProducts() {
       });
 
       container.appendChild(containerFragment);
-        document.querySelector('.counter').innerHTML = "" + container.childElementCount;
+      document.querySelector('.counter').innerHTML = "" + container.childElementCount;
     });
 }
 

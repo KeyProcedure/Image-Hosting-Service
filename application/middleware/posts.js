@@ -1,9 +1,9 @@
 const db = require('../conf/database');
 
 module.exports = {
-  getRecentPosts: function(req, res, next) {
+  getRecentPosts: function (req, res, next) {
     db.query('select id, title, description, thumbnail from posts ORDER BY createdAt DESC LIMIT 20')
-      .then(function([results, fields]) {
+      .then(function ([results, fields]) {
         if (results && results.length) {
           res.locals.results = results;
         }
@@ -12,7 +12,7 @@ module.exports = {
       .catch(err => next(err));
   },
 
-  getPostById: function(req, res, next) {
+  getPostById: function (req, res, next) {
     let postId = req.params.id;
     let baseSQL = `
       SELECT p.id, p.title, p.description, p.image, p.createdAt, u.username
@@ -21,20 +21,20 @@ module.exports = {
       ON p.fk_authorId=u.id
       WHERE p.id=?;`;
     db.query(baseSQL, [postId])
-      .then(function([results, fields]) {
+      .then(function ([results, fields]) {
         if (results && results.length == 1) {
           res.locals.currentPost = results[0];
           next();
         } else {
           req.flash("error", `Post ID ${postId} does not exist`);
-          req.session.save(function(saveErr) {
+          req.session.save(function (saveErr) {
             res.redirect('/');
           })
         }
-    })
+      })
   },
 
-  getCommentsForPostById: function(req, res, next) {
+  getCommentsForPostById: function (req, res, next) {
     let postId = req.params.id;
     let baseSQl = `select c.id, c.text, c.createdAt, u.username
       FROM comments c
@@ -43,7 +43,7 @@ module.exports = {
       WHERE fk_postId=?
       ORDER BY c.createdAt DESC;`;
     db.execute(baseSQl, [postId])
-      .then(function([results, fields]) {
+      .then(function ([results, fields]) {
         res.locals.currentPost.comments = results;
         next();
       })

@@ -2,17 +2,18 @@ const express = require('express');
 const router = express.Router();
 const db = require('../conf/database');
 
-router.post("/create", function(req, res, next) {
+router.post("/create", function (req, res, next) {
   if (!req.session.userId) {
+    req.flash("error", "You must be logged in to post a comment");
     res.json({
-      status:"error",
-      message:"You must be logged in to post a comment"
+      status: "error",
+      message: "You must be logged in to post a comment"
     });
   } else {
     let {comment, postId} = req.body;
     let {userId, username} = req.session;
     db.execute(`INSERT INTO comments (text, fk_authorId, fk_postId) value (?,?,?)`, [comment, userId, postId])
-      .then(function([results, fields]) {
+      .then(function ([results, fields]) {
         if (results && results.affectedRows === 1) {
           res.json({
             status: "success",

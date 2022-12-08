@@ -21,7 +21,7 @@ router.get("/postimage", isLoggedIn, function (req, res) {
 });
 
 router.get("/posts/:id(\\d+)", getPostById, getCommentsForPostById, function (req, res) {
-  res.render('viewpost', {js:["viewPost.js"]});
+  res.render('viewpost', {js: ["viewPost.js"]});
 });
 
 module.exports = router;

@@ -28,17 +28,17 @@ router.post("/register", function (req, res, next) {
     .then(function ([results, fields]) {
       if (results && results.affectedRows === 1) {
         req.flash("success", `Your account has been created, sign in to continue`);
-        req.session.save(function(saveErr) {
+        req.session.save(function (saveErr) {
           res.redirect('/login');
         })
       } else {
         throw new UserError('Sign Up Failed: account could not be made', "/register", 200);
       }
     })
-    .catch(function(err) {
+    .catch(function (err) {
       if (err instanceof UserError) {
         req.flash("error", err.getMessage());
-        req.session.save(function(saveErr) {
+        req.session.save(function (saveErr) {
           res.redirect(err.getRedirectURL());
         })
       } else {
@@ -71,7 +71,7 @@ router.post("/login", function (req, res, next) {
         req.session.userId = loggedUserId;
         req.session.username = loggedUsername;
         req.flash("success", `Hi ${loggedUsername}, you are now signed in`);
-        req.session.save(function(saveErr) {
+        req.session.save(function (saveErr) {
           res.redirect('/');
         })
       } else {
@@ -81,7 +81,7 @@ router.post("/login", function (req, res, next) {
     .catch(function (err) {
       if (err instanceof UserError) {
         req.flash("error", err.getMessage());
-        req.session.save(function(saveErr) {
+        req.session.save(function (saveErr) {
           res.redirect(err.getRedirectURL());
         })
       } else {
@@ -92,7 +92,7 @@ router.post("/login", function (req, res, next) {
 
 router.post("/logout", function (req, res, next) {
   req.flash([]);
-  req.session.destroy(function(destroyError) {
+  req.session.destroy(function (destroyError) {
     if (destroyError) {
       next(destroyError);
     } else {
