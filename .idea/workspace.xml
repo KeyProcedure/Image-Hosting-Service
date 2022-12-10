@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Included SQl dump file and updated README">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated min-height in case of empty home page.">
+      <change beforePath="$PROJECT_DIR$/application/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,14 +108,7 @@
       <workItem from="1669918774046" duration="49860000" />
       <workItem from="1670442704955" duration="49000" />
       <workItem from="1670442858544" duration="19239000" />
-      <workItem from="1670467629735" duration="13231000" />
-    </task>
-    <task id="LOCAL-00029" summary="Simplified fade method. Changed layout to grid.">
-      <created>1666307864712</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1666307864712</updated>
+      <workItem from="1670467629735" duration="13759000" />
     </task>
     <task id="LOCAL-00030" summary="Installed dependencies. Updated my name on the index page.">
       <created>1667087872347</created>
@@ -453,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670651888172</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Updated min-height in case of empty home page.">
+      <created>1670652651859</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1670652651859</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated registration redirect text." />
     <MESSAGE value="Updated login page warning messages." />
     <MESSAGE value="Updated colors of sign-in and sign-out buttons" />
     <MESSAGE value="In process of enabling images to be uploaded and viewed on the home page." />
@@ -519,6 +518,7 @@
     <MESSAGE value="Add link to placeholder in case uploaded image cannot be found." />
     <MESSAGE value="Updated run instructions" />
     <MESSAGE value="Included SQl dump file and updated README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Included SQl dump file and updated README" />
+    <MESSAGE value="Updated min-height in case of empty home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated min-height in case of empty home page." />
   </component>
 </project>
