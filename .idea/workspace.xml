@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated run instructions">
+    <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Included SQl dump file and updated README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,14 +108,7 @@
       <workItem from="1669918774046" duration="49860000" />
       <workItem from="1670442704955" duration="49000" />
       <workItem from="1670442858544" duration="19239000" />
-      <workItem from="1670467629735" duration="12567000" />
-    </task>
-    <task id="LOCAL-00028" summary="Added popup message for input field validity check">
-      <created>1666228277820</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1666228277820</updated>
+      <workItem from="1670467629735" duration="13231000" />
     </task>
     <task id="LOCAL-00029" summary="Simplified fade method. Changed layout to grid.">
       <created>1666307864712</created>
@@ -454,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670540095201</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Included SQl dump file and updated README">
+      <created>1670651888172</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1670651888172</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added input validation for login page." />
     <MESSAGE value="Updated registration redirect text." />
     <MESSAGE value="Updated login page warning messages." />
     <MESSAGE value="Updated colors of sign-in and sign-out buttons" />
@@ -520,6 +518,7 @@
     <MESSAGE value="Updated post limit on home page." />
     <MESSAGE value="Add link to placeholder in case uploaded image cannot be found." />
     <MESSAGE value="Updated run instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated run instructions" />
+    <MESSAGE value="Included SQl dump file and updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Included SQl dump file and updated README" />
   </component>
 </project>

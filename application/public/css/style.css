@@ -217,6 +217,7 @@ img {
   flex-shrink: 1;
   justify-content: center;
   align-items: center;
+  min-height: 70vh;
   width: 90%;
   max-width: 1000px;
   padding: 30px;
