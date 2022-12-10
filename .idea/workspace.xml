@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20e3a9-9a9e-4b6c-a75a-9dec4b578a9a" name="Changes" comment="Updated run instructions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +66,7 @@
       <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application\conf" />
       <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application\public\images\uploads" />
       <recent name="C:\Users\Zuby\WebstormProjects\csc317-code-KeyProcedure\application\public\images\frontend" />
     </key>
@@ -107,21 +109,7 @@
       <workItem from="1669918774046" duration="49860000" />
       <workItem from="1670442704955" duration="49000" />
       <workItem from="1670442858544" duration="19239000" />
-      <workItem from="1670467629735" duration="10652000" />
-    </task>
-    <task id="LOCAL-00026" summary="Updated flexbox setting for images">
-      <created>1666139946060</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1666139946060</updated>
-    </task>
-    <task id="LOCAL-00027" summary="removed onsubmit trigger">
-      <created>1666226017245</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1666226017245</updated>
+      <workItem from="1670467629735" duration="12567000" />
     </task>
     <task id="LOCAL-00028" summary="Added popup message for input field validity check">
       <created>1666228277820</created>
@@ -452,7 +440,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670539891207</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Updated run instructions">
+      <created>1670540069900</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1670540069900</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Updated run instructions">
+      <created>1670540095201</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1670540095201</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

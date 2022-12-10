@@ -2,7 +2,10 @@
 
 ## Purpose
 
-This repository stores all the code for my web application.
+This repository stores all the code for my web application.  
+
+EXTRA CREDIT:  
+Web app will adjust content as the window size is changed.
 
 ## Student Information
 
