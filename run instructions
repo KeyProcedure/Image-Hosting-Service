@@ -1,8 +1,8 @@
 
-Build Instructions: \
+Build Instructions: 
 npm install
 
-Run Instructions: \
+Run Instructions: 
 npm run builddb  
 npm start  
 localhost:3000
